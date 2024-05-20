@@ -1,0 +1,14 @@
+.resume {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .resume ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resume ul li {
+    margin: 0.5rem 0;
+  }
+  
