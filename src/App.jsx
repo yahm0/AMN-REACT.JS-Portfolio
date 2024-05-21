@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
@@ -8,26 +8,28 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './assets/styles/App.css';
 
+// Main App component
 function App() {
   return (
+    // Router to manage application routing
     <Router>
       <div className="App">
-        {/* Header component that will be displayed on all pages */}
+        {/* Header component to be displayed on all pages */}
         <Header />
         <main>
-          {/* Switch component to handle routing between different pages */}
-          <Switch>
+          {/* Routes component to define the routes of the application */}
+          <Routes>
             {/* Route for the About Me page */}
-            <Route exact path="/" component={AboutMe} />
+            <Route path="/" element={<AboutMe />} />
             {/* Route for the Portfolio page */}
-            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/portfolio" element={<Portfolio />} />
             {/* Route for the Contact page */}
-            <Route path="/contact" component={Contact} />
+            <Route path="/contact" element={<Contact />} />
             {/* Route for the Resume page */}
-            <Route path="/resume" component={Resume} />
-          </Switch>
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
         </main>
-        {/* Footer component that will be displayed on all pages */}
+        {/* Footer component to be displayed on all pages */}
         <Footer />
       </div>
     </Router>
