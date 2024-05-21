@@ -12,15 +12,22 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Header component that will be displayed on all pages */}
         <Header />
         <main>
+          {/* Switch component to handle routing between different pages */}
           <Switch>
+            {/* Route for the About Me page */}
             <Route exact path="/" component={AboutMe} />
+            {/* Route for the Portfolio page */}
             <Route path="/portfolio" component={Portfolio} />
+            {/* Route for the Contact page */}
             <Route path="/contact" component={Contact} />
+            {/* Route for the Resume page */}
             <Route path="/resume" component={Resume} />
           </Switch>
         </main>
+        {/* Footer component that will be displayed on all pages */}
         <Footer />
       </div>
     </Router>
