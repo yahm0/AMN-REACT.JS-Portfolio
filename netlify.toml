@@ -2,9 +2,6 @@
   command = "npm run build"
   publish = "build"
 
-[[plugins]]
-  package = "@netlify/plugin-cache-clear"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -9,9 +9,6 @@
       "react-scripts": "5.0.1",
       "web-vitals": "^3.0.4"
     },
-    "devDependencies": {
-      "@netlify/plugin-cache-clear": "^2.0.0"
-    },
     "scripts": {
       "start": "react-scripts start",
       "build": "react-scripts build",
