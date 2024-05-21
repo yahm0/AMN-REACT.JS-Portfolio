@@ -1,7 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* src/assets/styles/App.css */
+
+.App {
+    text-align: center;
+  }
+  
+  main {
+    padding: 2rem;
   }
   

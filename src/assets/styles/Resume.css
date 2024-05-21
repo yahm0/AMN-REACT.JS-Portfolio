@@ -1,11 +1,19 @@
+/* src/assets/styles/Resume.css */
+
 .resume {
     padding: 2rem;
     text-align: center;
+    background-color: #f8f4e3;
+  }
+  
+  .resume h2 {
+    color: #2c2c2c;
   }
   
   .resume ul {
     list-style: none;
     padding: 0;
+    color: #2c2c2c;
   }
   
   .resume ul li {

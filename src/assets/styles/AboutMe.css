@@ -1,11 +1,25 @@
+/* src/assets/styles/AboutMe.css */
+
 .about-me {
     padding: 2rem;
     text-align: center;
+    background-color: #f8f4e3;
   }
   
   .about-me img {
     border-radius: 50%;
     max-width: 150px;
     height: auto;
+    border: 2px solid #d4af37; /* Gold color */
+  }
+  
+  .about-me h2 {
+    color: #2c2c2c;
+  }
+  
+  .about-me p {
+    color: #2c2c2c;
+    max-width: 600px;
+    margin: 0 auto;
   }
   

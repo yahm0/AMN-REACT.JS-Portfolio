@@ -1,8 +1,11 @@
+/* src/assets/styles/Portfolio.css */
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
+    background-color: #f8f4e3;
   }
   

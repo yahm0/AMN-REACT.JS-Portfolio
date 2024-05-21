@@ -1,18 +1,33 @@
+/* src/assets/styles/Project.css */
+
 .project {
-    border: 1px solid #ccc;
+    border: 2px solid #d4af37; /* Gold color */
     padding: 1rem;
+    margin: 1rem;
     text-align: center;
+    background-color: #f8f4e3;
   }
   
   .project img {
     max-width: 100%;
     height: auto;
+    border-bottom: 2px solid #d4af37; /* Gold color */
+  }
+  
+  .project h3 {
+    color: #2c2c2c;
   }
   
   .project a {
     display: block;
     margin: 0.5rem 0;
-    color: #007bff;
+    color: #2c2c2c;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .project a:hover {
+    color: #d4af37; /* Gold color */
   }
   
