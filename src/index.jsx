@@ -1,6 +1,7 @@
+// src/index.jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/styles/index.css';
+import './assets/styles/index.css'; // Ensure this path is correct
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
