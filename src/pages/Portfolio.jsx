@@ -5,16 +5,22 @@ import '../assets/styles/Portfolio.css';
 // Array of project objects to be displayed in the portfolio
 const projects = [
   {
-    title: 'Project 1',
-    image: '/path-to-project1.png',
-    deployedLink: 'https://deployed-link1.com',
-    repoLink: 'https://github.com/repo1'
+    title: 'Book Search Engine and Manager',
+    image: '',
+    deployedLink: 'https://book-search-engine-and-manager-16b16f7fd358.herokuapp.com/',
+    repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager'
   },
   {
-    title: 'Project 2',
-    image: '/path-to-project2.png',
-    deployedLink: 'https://deployed-link2.com',
-    repoLink: 'https://github.com/repo2'
+    title: 'PWA Text Editor',
+    image: '',
+    deployedLink: 'https://pwa-text-editor-y0ld.onrender.com/',
+    repoLink: 'https://github.com/yahm0/PWA-Text-Editor'
+  },
+  {
+    title: 'Terminal Softwares Website',
+    image: '',
+    deployedLink: 'https://terminalsoftware.gg',
+    repoLink: 'https://github.com/yahm0/Terminal-Software-Website'
   },
   // Add more projects as needed
 ];
