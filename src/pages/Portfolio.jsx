@@ -23,6 +23,12 @@ const projects = [
     repoLink: 'https://github.com/yahm0/Terminal-Software-Website'
   },
   {
+    title: 'Junk Twitter',
+    image: '',
+    deployedLink: 'https://junk-twitter-1f692e920bc6.herokuapp.com/login',
+    repoLink: 'https://github.com/yahm0/Junk-Twitter'
+  },
+  {
     title: 'Robust Online Note Taker',
     image: '',
     deployedLink: 'https://robust-online-note-taker-35099af07454.herokuapp.com/',
