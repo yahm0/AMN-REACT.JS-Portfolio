@@ -22,6 +22,12 @@ const projects = [
     deployedLink: 'https://terminalsoftware.gg',
     repoLink: 'https://github.com/yahm0/Terminal-Software-Website'
   },
+  {
+    title: 'Robust Online Note Taker',
+    image: '',
+    deployedLink: 'https://robust-online-note-taker-35099af07454.herokuapp.com/',
+    repoLink: 'https://github.com/yahm0/Robust-Online-Note-Taker'
+  },
   // Add more projects as needed
 ];
 
