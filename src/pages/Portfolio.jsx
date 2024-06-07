@@ -29,10 +29,10 @@ const projects = [
     repoLink: 'https://github.com/yahm0/Junk-Twitter'
   },
   {
-    title: 'Robust Online Note Taker',
+    title: 'Eventii Management Platform',
     image: '',
-    deployedLink: 'https://robust-online-note-taker-35099af07454.herokuapp.com/',
-    repoLink: 'https://github.com/yahm0/Robust-Online-Note-Taker'
+    deployedLink: 'https://eventii-management-platform-l6xt.onrender.com/',
+    repoLink: 'https://github.com/yahm0/Eventii-Management-Platform'
   },
   // Add more projects as needed
 ];
