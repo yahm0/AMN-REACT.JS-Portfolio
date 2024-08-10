@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/AboutMe.css';
-import TestimonialsSlider from './components/TestimonialsSlider';
+import TestimonialsSlider from '../components/TestimonialsSlider';
 
 function AboutMe() {
   return (
