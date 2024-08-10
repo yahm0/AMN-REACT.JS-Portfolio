@@ -15,11 +15,8 @@
 
 .about-me-header img {
   border-radius: 50%;
-  /* Makes the image round */
-  width: 150px;
-  /* Set equal width and height */
-  height: 150px;
-  /* Set equal width and height */
+  max-width: 150px;
+  height: auto;
   margin-bottom: 1rem;
 }
 

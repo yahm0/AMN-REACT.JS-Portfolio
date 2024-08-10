@@ -1,0 +1,33 @@
+.testimonials-slider {
+    margin: 40px 0;
+    text-align: center;
+    background-color: #f8f4e3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-slider h2 {
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    padding: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #2c2c2c;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #d4af37;
+}
+
+.testimonial h5 {
+    margin-top: 5px;
+    color: #2c2c2c;
+    font-weight: normal;
+}

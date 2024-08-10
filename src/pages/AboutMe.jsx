@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/AboutMe.css';
+import TestimonialsSlider from './TestimonialsSlider';
 
 function AboutMe() {
   return (
@@ -19,6 +20,7 @@ function AboutMe() {
           <p>I am deeply committed to leveraging technology to solve real-world problems, constantly seeking innovative solutions that can improve operational efficiencies, enhance customer experiences, and create competitive advantages. With a keen eye for detail and a relentless pursuit of excellence, I am always ready to tackle new challenges and lead my team to success.</p>
         </section>
       </div>
+      <TestimonialsSlider />
     </div>
   );
 }
