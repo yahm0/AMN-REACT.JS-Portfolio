@@ -9,18 +9,32 @@
 .about-me-header {
   text-align: center;
   padding: 1.5rem;
+  width: 100%;
+  /* Ensure the header spans the full width */
 }
 
 .about-me-header img {
   border-radius: 50%;
-  max-width: 150px;
-  height: auto;
+  /* Makes the image round */
+  width: 150px;
+  /* Set equal width and height */
+  height: 150px;
+  /* Set equal width and height */
   margin-bottom: 1rem;
 }
 
 .about-me-header h2 {
   color: #2c2c2c;
   margin-bottom: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  /* Ensure the cards container spans the full width */
 }
 
 .about-me-card {
