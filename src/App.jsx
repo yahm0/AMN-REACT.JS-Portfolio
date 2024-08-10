@@ -6,7 +6,7 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import './assets/styles/App.css';
+import './styles/App.css';
 
 // Main App component
 function App() {

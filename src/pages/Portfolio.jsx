@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '../components/Project';
-import '../assets/styles/Portfolio.css';
+import './styles/Portfolio.css';
 
 // Array of project objects to be displayed in the portfolio
 const projects = [

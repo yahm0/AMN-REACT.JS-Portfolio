@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/styles/ContactForm.css';
+import './styles/ContactForm.css';
 
 function ContactForm() {
   // State variables to manage form inputs and errors
@@ -37,32 +37,32 @@ function ContactForm() {
     <form className="contact-form" onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
-        <input 
-          type="text" 
-          value={name} 
-          onChange={(e) => setName(e.target.value)} 
-          onBlur={() => !name && setErrors({ ...errors, name: 'Name is required' })} 
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          onBlur={() => !name && setErrors({ ...errors, name: 'Name is required' })}
         />
         {errors.name && <span>{errors.name}</span>}
       </div>
       <div>
         <label>Email:</label>
-        <input 
-          type="email" 
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           onBlur={() => {
             if (!email) setErrors({ ...errors, email: 'Email is required' });
             else if (!validateEmail(email)) setErrors({ ...errors, email: 'Invalid email address' });
-          }} 
+          }}
         />
         {errors.email && <span>{errors.email}</span>}
       </div>
       <div>
         <label>Message:</label>
-        <textarea 
-          value={message} 
-          onChange={(e) => setMessage(e.target.value)} 
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           onBlur={() => !message && setErrors({ ...errors, message: 'Message is required' })}
         ></textarea>
         {errors.message && <span>{errors.message}</span>}

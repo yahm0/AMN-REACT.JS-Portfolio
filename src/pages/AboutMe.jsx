@@ -1,12 +1,12 @@
 import React from 'react';
-import '../assets/styles/AboutMe.css';
+import './styles/AboutMe.css';
 
 function AboutMe() {
   return (
     <><section className="about-me">
-      <img src="../assets/imgs/profilepicture.png" alt="Developer" />
+      <img src="/assets/imgs/profilepicture.png" alt="Developer" />
       <h2>About Me</h2>
-      </section>
+    </section>
       <section>
         <p>As an astute Director of Information Technology and Software Developer, I bring a fresh and innovative approach to overseeing IT operations and developing cutting-edge software solutions. With a robust foundation in both the strategic and technical facets of information technology, I excel in leading teams to deliver projects that exceed expectations, both on time and within budget. My passion for technology is matched by my dedication to staying at the forefront of industry trends, ensuring that the organizations I work with are not just current but ahead of the curve.</p>
       </section>
