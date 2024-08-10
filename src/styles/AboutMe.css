@@ -1,25 +1,33 @@
-/* src/styles/AboutMe.css */
-
-.about-me {
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 2rem;
-  text-align: center;
+}
+
+.about-me-card {
   background-color: #f8f4e3;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
 }
 
-.about-me img {
+.about-me-card img {
   border-radius: 50%;
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
-  border: 2px solid #d4af37;
-  /* Gold color */
+  margin-bottom: 1rem;
 }
 
-.about-me h2 {
+.about-me-card h2 {
   color: #2c2c2c;
+  margin-bottom: 1rem;
 }
 
-.about-me p {
+.about-me-card p {
   color: #2c2c2c;
-  max-width: 600px;
-  margin: 0 auto;
 }
