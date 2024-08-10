@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/ContactForm.css';
+import '../styles/ContactForm.css';
 
 function ContactForm() {
   // State variables to manage form inputs and errors
