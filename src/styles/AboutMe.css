@@ -32,6 +32,8 @@
 @media (max-width: 768px) {
   .about-me-container {
     padding: 1.5rem;
+    margin-top: 10px;
+    /* Small margin to prevent content from being cut off */
   }
 
   .about-me-card {
@@ -52,6 +54,8 @@
   .about-me-container {
     padding: 1rem;
     max-width: 95%;
+    margin-top: 15px;
+    /* Slightly increased margin for smaller screens */
   }
 
   .about-me-card {
