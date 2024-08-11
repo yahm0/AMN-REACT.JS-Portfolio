@@ -12,7 +12,7 @@ function TestimonialsSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,       // Enable autoplay
-        autoplaySpeed: 5000,  // Time in milliseconds before sliding to the next slide
+        autoplaySpeed: 15000,  // Time in milliseconds before sliding to the next slide
         cssEase: 'linear',    // Ensure smooth linear transition
         pauseOnHover: true,   // Pause the autoplay when the user hovers over the slider
     };
