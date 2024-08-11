@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="background-container">
-          <img src="/assets/imgs/overlapping-white-grey-gradient-circles-background-vector.jpg" alt="Background" className="background-image" />
+          <img src="/assets/imgs/background.jpg" alt="Background" className="background-image" />
           <Header />
           <main>
             <Routes>
