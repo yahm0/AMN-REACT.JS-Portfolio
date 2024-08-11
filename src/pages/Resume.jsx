@@ -9,7 +9,7 @@ function Resume() {
         <iframe
           src="assets/resume/ANResume2024_combined.pdf"
           width="100%"
-          height="500px"
+          height="1000px"
           title="Resume PDF"
         ></iframe>
       </div>
