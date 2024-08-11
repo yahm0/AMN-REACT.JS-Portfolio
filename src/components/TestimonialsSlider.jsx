@@ -7,10 +7,10 @@ function TestimonialsSlider() {
     const settings = {
         dots: true,              // Display navigation dots below the slider. Each dot represents a slide and allows the user to navigate to a specific slide.
         infinite: true,          // Enable infinite scrolling. When the last slide is reached, the slider will seamlessly transition back to the first slide.
-        speed: 2000,             // The duration of the transition between slides in milliseconds. Here, 2000ms means it takes 2 seconds to complete a slide transition, providing a smooth and slower scrolling effect.
+        speed: 15000,             // The duration of the transition between slides in milliseconds. Here, 2000ms means it takes 2 seconds to complete a slide transition, providing a smooth and slower scrolling effect.
         slidesToShow: 1,         // Number of slides to display at one time. Set to 1 to show only one testimonial at a time.
         slidesToScroll: 1,       // Number of slides to scroll through at one time. Set to 1 so each click or autoplay event scrolls through one slide.
-        autoplay: false,          // Enable automatic scrolling through slides. The slider will automatically progress to the next slide after the delay specified in autoplaySpeed.
+        autoplay: true,          // Enable automatic scrolling through slides. The slider will automatically progress to the next slide after the delay specified in autoplaySpeed.
         autoplaySpeed: 15000,    // Time delay in milliseconds before automatically transitioning to the next slide. Set to 15000ms (15 seconds) to allow the user ample time to read each testimonial.
         cssEase: 'linear',       // Defines the CSS easing function to apply to the transition effect between slides. 'linear' creates a consistent, steady transition speed without acceleration or deceleration.
         pauseOnHover: true,      // Pause the autoplay when the user hovers over the slider. This allows the user to take more time reading a testimonial without being interrupted by an automatic slide transition.
