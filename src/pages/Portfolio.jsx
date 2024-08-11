@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: 'Eventii Management Platform',
-    image: '/assets/imgs/Eventii.jpg',
+    image: ' ',
     deployedLink: 'https://eventii-management-platform-l6xt.onrender.com/',
     repoLink: 'https://github.com/yahm0/Eventii-Management-Platform'
   },
