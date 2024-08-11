@@ -11,14 +11,19 @@
 }
 
 .bio-container {
+  display: flex;
+  align-items: flex-start;
+  /* Align image and text at the top */
+  gap: 20px;
+  /* Space between image and text */
   width: 100%;
+  justify-content: space-between;
+  /* Ensure content is distributed evenly */
 }
 
 .about-me-card {
-  column-count: 2;
-  /* Creates two columns for newspaper-style layout */
-  column-gap: 30px;
-  /* Space between the columns */
+  flex: 1;
+  /* Allow the bio section to take up available space */
   text-align: justify;
   /* Justify the text for a newspaper-like appearance */
   padding: 1rem 2rem;
@@ -29,6 +34,10 @@
   /* Smooth corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for depth */
+  font-size: 1rem;
+  /* Adjust the font size for readability */
+  line-height: 1.6;
+  /* Improve readability by increasing line height */
 }
 
 .about-me-header {
@@ -36,65 +45,21 @@
   /* Left-align the header content */
   padding: 1.5rem 0;
   /* Adjust padding to fit within the middle third */
-  width: 100%;
+  width: 250px;
+  /* Fixed width for the image container */
+  margin-bottom: 1rem;
 }
 
 .about-me-header img {
   border-radius: 8px;
   /* Soft corners for the image */
-  max-width: 150px;
+  width: 100%;
+  /* Ensure the image fits within its container */
   height: auto;
-  margin-bottom: 1rem;
 }
 
 .about-me-header h2 {
   color: #2c2c2c;
   margin-bottom: 1rem;
   font-size: 2rem;
-}
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-}
-
-.work-experiences-container,
-.disciplines-container {
-  width: 100%;
-  text-align: left;
-  margin: 20px 0;
-  /* Add vertical spacing between sections */
-}
-
-.grid-layout {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  gap: 10px;
-  justify-content: start;
-  /* Align grid items to start */
-}
-
-.work-experience,
-.discipline {
-  background-color: transparent;
-  text-align: left;
-  padding: 5px 10px;
-  margin: 0;
-}
-
-.work-experience h4,
-.discipline h4 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-  color: #000000;
-}
-
-.work-experience p,
-.discipline p {
-  margin: 3px 0;
-  color: #2c2c2c;
 }
