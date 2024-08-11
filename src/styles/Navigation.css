@@ -108,10 +108,10 @@ nav ul li a::after {
 
 @media (max-width: 480px) {
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    padding-right: 0;
+    padding-right: 0.5rem;
+    white-space: nowrap;
   }
 
   nav ul li {
@@ -119,8 +119,8 @@ nav ul li a::after {
   }
 
   nav ul li a {
-    font-size: 0.9rem;
-    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
   }
 
   nav ul li a:hover {
