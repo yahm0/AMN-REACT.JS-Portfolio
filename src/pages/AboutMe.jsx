@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <div className="about-me-container">
       <section className="about-me-header">
-        <img src="/assets/imgs/profilepicture.png" alt="Developer" />
+        <img src="/assets/imgs/profilepicture.jpg" alt="Developer" />
         <h2>About Me</h2>
       </section>
       <div className="cards-container">
