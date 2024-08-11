@@ -7,9 +7,6 @@ function AboutMe() {
     <div className="about-me-container">
       {/* Bio Section */}
       <div className="bio-container">
-        <section className="about-me-header">
-          <img src="/assets/imgs/profilepicture.jpg" alt="Developer" className="profile-picture" />
-        </section>
         <section className="about-me-card">
           <h2>Director of Information Technology specializing in transformative thinking,</h2>
           <p>
@@ -27,6 +24,9 @@ function AboutMe() {
           <p>
             In a world where technology evolves at breakneck speed, I remain steadfast in my mission: to harness its potential, to drive innovation, and to lead with a vision that sees beyond the immediate horizon.
           </p>
+        </section>
+        <section className="about-me-header">
+          <img src="/assets/imgs/profilepicture.jpg" alt="Developer" className="profile-picture" />
         </section>
       </div>
 

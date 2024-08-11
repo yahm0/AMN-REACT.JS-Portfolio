@@ -28,6 +28,16 @@ function TestimonialsSlider() {
                     I couldn’t have asked for a better mentor to start my career.`,
             role: 'IT Specialist at Stan Weaver.', // Role of the person giving the testimonial
         },
+        {
+            name: ' ',
+            quote: ' ',
+            role: ' ', // Role of the person giving the testimonial
+        },
+        {
+            name: ' ',
+            quote: ' ',
+            role: ' ', // Role of the person giving the testimonial
+        },
     ];
 
     // Return JSX to render the slider
