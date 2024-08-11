@@ -8,11 +8,13 @@ function TestimonialsSlider() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,          // Slow down the scrolling speed
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: true,       // Enable autoplay
+        autoplaySpeed: 5000,  // Time in milliseconds before sliding to the next slide
+        cssEase: 'linear',    // Ensure smooth linear transition
+        pauseOnHover: true,   // Pause the autoplay when the user hovers over the slider
     };
 
     const testimonials = [

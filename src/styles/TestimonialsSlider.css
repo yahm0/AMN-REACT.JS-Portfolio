@@ -36,5 +36,9 @@
 .slick-slide {
     display: block !important;
     opacity: 1 !important;
-    min-height: 150px;
+    visibility: visible !important;
+}
+
+.slick-track {
+    display: flex !important;
 }
