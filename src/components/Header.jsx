@@ -6,7 +6,9 @@ function Header() {
   return (
     <header className="header">
       <h1>Adam Nuccio</h1>
-      <Navigation />
+      <div className="nav-container">
+        <Navigation />
+      </div>
     </header>
   );
 }
