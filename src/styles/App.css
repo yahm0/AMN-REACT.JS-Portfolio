@@ -9,13 +9,15 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  /* Ensure the footer stays at the bottom */
+  position: relative;
+  z-index: 1;
+  /* Ensure content stays above the background image */
 }
 
 /* Background Container */
 .background-container {
-  position: absolute;
+  position: fixed;
+  /* Change to fixed to ensure it covers the entire viewport */
   top: 0;
   left: 0;
   width: 100%;
@@ -123,11 +125,12 @@ nav ul li a.active {
   text-align: center;
   width: 100%;
   border-top: none;
-  margin-top: 2rem;
+  margin-top: auto;
+  /* Ensure the footer stays at the bottom */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Merriweather', serif;
-  flex-shrink: 0;
-  /* Ensure the footer stays at the bottom */
+  position: relative;
+  z-index: 1;
 }
 
 /* Media Queries for Responsive Design */

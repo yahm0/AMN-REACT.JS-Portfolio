@@ -8,13 +8,12 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './styles/App.css';
 
-// Main App component
 function App() {
   return (
     <Router>
-      <div className="App">
-        <div className="background-container">
-          <img src="/public/assets/imgs/background.jpg" alt="Background" className="background-image" />
+      <div className="background-container">
+        <img src="/assets/imgs/background.jpg" alt="Background" className="background-image" />
+        <div className="App">
           <Header />
           <main>
             <Routes>
