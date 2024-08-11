@@ -8,26 +8,26 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './styles/App.css';
 
+// Main App component
 function App() {
   return (
     <Router>
       <div className="App">
         <div className="background-container">
           <img src="/assets/imgs/overlapping-white-grey-gradient-circles-background-vector.jpg" alt="Background" className="background-image" />
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<AboutMe />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </main>
+          <Footer />
         </div>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </main>
-        <Footer />
       </div>
-    </div>
-    </Router >
+    </Router>
   );
 }
 
