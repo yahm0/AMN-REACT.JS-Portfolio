@@ -1,18 +1,18 @@
 /* src/styles/Project.css */
 
 .project {
-  border: 2px solid #d4af37;
+  border: 2px solid #ffffff;
   /* Gold color */
   padding: 1rem;
   margin: 1rem;
   text-align: center;
-  background-color: #f8f4e3;
+  background-color: #ffffff;
 }
 
 .project img {
   max-width: 100%;
   height: auto;
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid #ffffff;
   /* Gold color */
 }
 
