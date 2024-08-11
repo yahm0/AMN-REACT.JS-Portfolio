@@ -23,31 +23,23 @@
 
 .about-me-card {
   flex: 1;
-  /* Allow the bio section to take up available space */
   text-align: justify;
-  /* Justify the text for a newspaper-like appearance */
   padding: 1rem 2rem;
-  /* Add padding for better readability */
   background-color: #f8f8f8;
-  /* Light background for contrast */
   border-radius: 8px;
-  /* Smooth corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
   font-size: 1rem;
-  /* Adjust the font size for readability */
-  line-height: 1.6;
-  /* Improve readability by increasing line height */
+  line-height: 1.4;
+  /* Reduce the line-height to make spacing between lines smaller */
+  letter-spacing: 0.02em;
+  /* Adjust letter-spacing slightly for a tighter look */
 }
 
-.about-me-header {
-  text-align: left;
-  /* Left-align the header content */
-  padding: 1.5rem 0;
-  /* Adjust padding to fit within the middle third */
-  width: 250px;
-  /* Fixed width for the image container */
-  margin-bottom: 1rem;
+.about-me-header h2 {
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  /* Reduce bottom margin to bring the header closer to the text */
+  font-size: 2rem;
 }
 
 .about-me-header img {
