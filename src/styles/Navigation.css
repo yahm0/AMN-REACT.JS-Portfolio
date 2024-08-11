@@ -5,9 +5,7 @@ nav {
   z-index: 1000;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
   font-family: 'Merriweather', serif;
-  /* Elegant serif font */
 }
 
 nav ul {
@@ -30,27 +28,20 @@ nav ul li a {
   font-size: 1.2rem;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   font-family: 'Merriweather', serif;
-  /* Font to match Emigre style */
 }
 
 nav ul li a:hover {
   background-color: #E6E6FA;
-  /* Lavender background on hover */
   color: #000000 !important;
   transform: scale(1.05);
-  /* Slight scale effect on hover */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  /* Add shadow on hover */
 }
 
 nav ul li a.active {
   background-color: #E6E6FA;
-  /* Lavender background for active state */
   color: #000000 !important;
   border-radius: 5px;
-  /* Slightly rounded corners for active state */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  /* Subtle shadow for active state */
 }
 
 nav ul li a::before {
