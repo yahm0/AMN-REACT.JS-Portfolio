@@ -31,3 +31,10 @@
     color: #2c2c2c;
     font-weight: normal;
 }
+
+/* Ensure slider visibility */
+.slick-slide {
+    display: block !important;
+    opacity: 1 !important;
+    min-height: 150px;
+}
