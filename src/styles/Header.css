@@ -1,19 +1,22 @@
-/* src/styles/Header.css */
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #2c2c2c;
-  color: #f8f4e3;
+  background-color: transparent;
+  /* Set to transparent or consider using a dark gray like #1a1a1a */
+  color: #ffffff;
+  /* Use pure white for the text */
+  border-bottom: 1px solid #3a3a3a;
+  /* Optional: Add a sleek bottom border to separate the header */
 }
 
 .header h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* Consider using 'Roboto' for a modern look */
   font-size: 2.5rem;
-  color: #d4af37;
-  /* Gold color */
+  color: #00bcd4;
+  /* Modern cyan accent color */
 }
 
 nav ul {
@@ -23,12 +26,20 @@ nav ul {
 }
 
 nav ul li a {
-  color: #f8f4e3;
+  color: #ffffff;
+  /* Use white for navigation links */
   text-decoration: none;
   font-size: 1.2rem;
+  transition: color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+  /* Change to modern cyan on hover */
 }
 
 nav ul li a.active {
-  border-bottom: 2px solid #d4af37;
-  /* Gold color */
+  border-bottom: 2px solid #00bcd4;
+  /* Modern cyan color for active state */
 }

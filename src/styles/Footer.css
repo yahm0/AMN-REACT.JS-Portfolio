@@ -1,22 +1,34 @@
-/* src/styles/Footer.css */
-
 .footer {
   padding: 1rem 2rem;
-  background-color: #2c2c2c;
-  color: #f8f4e3;
+  /* Remove background color to make it transparent or set it to a modern shade */
+  background-color: transparent;
+  /* You can set it to a modern color like #1a1a1a if needed */
+  color: #ffffff;
+  /* Use pure white for the text */
   text-align: center;
   position: fixed;
   width: 100%;
   bottom: 0;
+  border-top: 1px solid #3a3a3a;
+  /* Optional: Add a sleek top border to separate the footer */
 }
 
 .footer p {
   margin: 0;
+  color: #bbbbbb;
+  /* Lighter gray for paragraph text */
 }
 
 .footer a {
-  color: #d4af37;
-  /* Gold color */
+  color: #00bcd4;
+  /* Modern cyan accent color */
   text-decoration: none;
   margin: 0 0.5rem;
+  transition: color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+  color: #ffffff;
+  /* Change to white on hover for contrast */
 }
