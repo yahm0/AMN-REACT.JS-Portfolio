@@ -19,18 +19,47 @@ function AboutMe() {
         </section>
 
         {/* Work Experiences Section */}
-        <section className="about-me-card">
+        <div className="work-experiences-container">
           <h3>Work Experiences</h3>
-          <p>
-
-          </p>
-        </section>
+          <div className="work-experiences-grid">
+            <div className="work-experience">
+              <h4>Founder</h4>
+              <p>Terminal Software</p>
+              <p>January 2023 – Present</p>
+            </div>
+            <div className="work-experience">
+              <h4>Director of Information Technology</h4>
+              <p>Cors-Air</p>
+              <p>July 2022 – July 2024</p>
+            </div>
+            <div className="work-experience">
+              <h4>Director of Information Technology</h4>
+              <p>Stan Weaver</p>
+              <p>June 2022 – July 2024</p>
+            </div>
+            <div className="work-experience">
+              <h4>Network Engineer</h4>
+              <p>Infotect Design Solutions (CSP)</p>
+              <p>February 2022 – June 2022</p>
+            </div>
+            <div className="work-experience">
+              <h4>Network Specialist</h4>
+              <p>ITS Group (MSP)</p>
+              <p>January 2021 – February 2022</p>
+            </div>
+            <div className="work-experience">
+              <h4>Software Quality Assurance</h4>
+              <p>Fairfax Imaging</p>
+              <p>October 2018 – October 2019</p>
+            </div>
+          </div>
+        </div>
 
         {/* Disciplines Section */}
         <section className="about-me-card">
           <h3>Disciplines</h3>
           <p>
-
+            My work spans several disciplines, including Software Development, IT Management, and Data Analytics. I approach each discipline with a focus on delivering value through innovation, efficiency, and strategic thinking, ensuring that the organizations I work with achieve their technological and business objectives.
           </p>
         </section>
       </div>
