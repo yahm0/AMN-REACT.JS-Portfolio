@@ -31,15 +31,21 @@
     content: '';
     position: absolute;
     bottom: -5px;
-    left: 0;
-    width: 100%;
+    left: -10%;
+    /* Adjusted to start from the left */
+    width: 120%;
+    /* Increased to expand to both sides */
     height: 2px;
     background-color: #8c8cff;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, left 0.3s ease;
+    /* Added transition for left */
 }
 
 .testimonials-slider h2:hover::after {
     width: 120%;
+    /* Adjusted to expand */
+    left: -10%;
+    /* Adjusted to maintain centering */
 }
 
 .testimonials-slider h2:hover {
