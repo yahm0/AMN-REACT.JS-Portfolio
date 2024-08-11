@@ -10,6 +10,17 @@
   width: 100%;
 }
 
+.about-me-card {
+  column-count: 2;
+  /* Creates two columns for newspaper-style layout */
+  column-gap: 30px;
+  /* Space between the columns */
+  text-align: justify;
+  /* Justify the text for a newspaper-like appearance */
+  padding: 1rem 2rem;
+  /* Add padding for better readability */
+}
+
 .about-me-header {
   text-align: center;
   padding: 1.5rem;
@@ -40,10 +51,9 @@
 .work-experiences-container,
 .disciplines-container {
   width: 100%;
-  text-align: center;
-  /* Center align the text */
+  text-align: left;
+  /* Left-align the headers */
   margin: 0 auto;
-  /* Center the entire container */
 }
 
 .grid-layout {
@@ -51,15 +61,16 @@
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
   /* Auto adjust the row height */
-  gap: 10px;
+  gap: 5px;
+  /* Reduce the gap between grid items */
   justify-content: center;
 }
 
 .work-experience,
 .discipline {
   background-color: transparent;
-  text-align: center;
-  /* Center align individual items */
+  text-align: left;
+  /* Left-align individual items */
   padding: 5px 10px;
   /* Reduce padding to bring items closer together */
   margin: 0;
