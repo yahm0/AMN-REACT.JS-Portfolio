@@ -13,12 +13,21 @@
 }
 
 .testimonial {
-    padding: 10px;
+    background-color: white;
+    /* Ensure each card has a distinct background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    /* Space between cards */
+    text-align: left;
+    /* Align text to the left for a card-like feel */
 }
 
 .testimonial p {
     font-style: italic;
     color: #2c2c2c;
+    margin-bottom: 15px;
 }
 
 .testimonial h4 {
@@ -34,7 +43,8 @@
 
 /* Ensure slider visibility */
 .slick-slide {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
     opacity: 1 !important;
     visibility: visible !important;
 }
