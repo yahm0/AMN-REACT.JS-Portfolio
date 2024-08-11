@@ -3,20 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: transparent;
-  /* Set to transparent or consider using a dark gray like #1a1a1a */
-  color: #ffffff;
-  /* Use pure white for the text */
-  border-bottom: 1px solid #3a3a3a;
-  /* Optional: Add a sleek bottom border to separate the header */
+  background-color: #ffffff;
+  /* Set to white background */
+  color: #000000;
+  /* Set text color to black */
+  border-bottom: none;
+  /* Remove the bottom border */
 }
 
 .header h1 {
   font-family: 'Roboto', sans-serif;
-  /* Consider using 'Roboto' for a modern look */
+  /* Use 'Roboto' for a modern look */
   font-size: 2.5rem;
-  color: #00bcd4;
-  /* Modern cyan accent color */
+  color: #000000;
+  /* Set the header title color to black */
 }
 
 nav ul {
@@ -26,8 +26,8 @@ nav ul {
 }
 
 nav ul li a {
-  color: #ffffff;
-  /* Use white for navigation links */
+  color: #000000;
+  /* Set navigation link color to black */
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease;
@@ -35,11 +35,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #00bcd4;
-  /* Change to modern cyan on hover */
+  color: #E6E6FA;
+  /* Change to lavender on hover */
 }
 
 nav ul li a.active {
-  border-bottom: 2px solid #00bcd4;
-  /* Modern cyan color for active state */
+  color: #E6E6FA;
+  /* Change to lavender for active state */
+  border-bottom: none;
+  /* Remove bottom border for active state */
 }

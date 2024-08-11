@@ -1,9 +1,9 @@
-/* src/styles/index.css */
-
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f8f4e3;
-  color: #2c2c2c;
+  background-color: #ffffff;
+  /* Set background color to white */
+  color: #000000;
+  /* Set text color to black */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,6 +15,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Great Vibes', cursive;
-  color: #2c2c2c;
+  font-family: 'Roboto', sans-serif;
+  /* Use 'Roboto' for a modern look */
+  color: #000000;
+  /* Set heading color to black */
+}
+
+/* Links */
+a {
+  color: #000000;
+  /* Set link color to black */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+a:hover,
+a.active {
+  color: #E6E6FA;
+  /* Change to lavender on hover and active state */
 }
