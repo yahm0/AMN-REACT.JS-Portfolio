@@ -37,7 +37,8 @@
   width: 100%;
 }
 
-.work-experiences-container {
+.work-experiences-container,
+.disciplines-container {
   width: 100%;
   text-align: center;
   /* Center align the text */
@@ -45,27 +46,28 @@
   /* Center the entire container */
 }
 
-.work-experiences-grid {
+.grid-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* Two columns */
+  grid-auto-rows: minmax(100px, auto);
+  /* Auto adjust the row height */
   gap: 10px;
-  /* Reduce spacing between the grid items */
   justify-content: center;
-  /* Center the grid items */
 }
 
-.work-experience {
+.work-experience,
+.discipline {
   background-color: transparent;
   text-align: center;
-  /* Center align individual work experience items */
+  /* Center align individual items */
   padding: 5px 10px;
   /* Reduce padding to bring items closer together */
   margin: 0;
   /* Remove any default margin */
 }
 
-.work-experience h4 {
+.work-experience h4,
+.discipline h4 {
   font-size: 1.2rem;
   /* Slightly reduce the font size */
   margin-bottom: 5px;
@@ -73,7 +75,8 @@
   color: #000000;
 }
 
-.work-experience p {
+.work-experience p,
+.discipline p {
   margin: 3px 0;
   /* Reduce space between paragraphs */
   color: #2c2c2c;

@@ -22,7 +22,7 @@ function AboutMe() {
       {/* Work Experiences Section */}
       <div className="work-experiences-container">
         <h3>Work Experiences</h3>
-        <div className="work-experiences-grid">
+        <div className="grid-layout">
           <div className="work-experience">
             <h4>Founder</h4>
             <p>Terminal Software</p>
@@ -57,12 +57,23 @@ function AboutMe() {
       </div>
 
       {/* Disciplines Section */}
-      <section className="about-me-card">
+      <div className="disciplines-container">
         <h3>Disciplines</h3>
-        <p>
-          My work spans several disciplines, including Software Development, IT Management, and Data Analytics. I approach each discipline with a focus on delivering value through innovation, efficiency, and strategic thinking, ensuring that the organizations I work with achieve their technological and business objectives.
-        </p>
-      </section>
+        <div className="grid-layout">
+          <div className="discipline">
+            <h4>Software Development</h4>
+            <p>Expert in creating scalable and efficient software solutions.</p>
+          </div>
+          <div className="discipline">
+            <h4>IT Management</h4>
+            <p>Skilled in managing IT operations and teams for optimal performance.</p>
+          </div>
+          <div className="discipline">
+            <h4>Data Analytics</h4>
+            <p>Proficient in analyzing data and providing actionable insights.</p>
+          </div>
+        </div>
+      </div>
 
       <TestimonialsSlider />
     </div>
