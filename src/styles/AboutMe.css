@@ -39,6 +39,10 @@
 
 .work-experiences-container {
   width: 100%;
+  text-align: center;
+  /* Center align the text */
+  margin: 0 auto;
+  /* Center the entire container */
 }
 
 .work-experiences-grid {
@@ -47,20 +51,30 @@
   /* Two columns */
   gap: 10px;
   /* Reduce spacing between the grid items */
+  justify-content: center;
+  /* Center the grid items */
 }
 
 .work-experience {
   background-color: transparent;
-  text-align: left;
+  text-align: center;
+  /* Center align individual work experience items */
+  padding: 5px 10px;
+  /* Reduce padding to bring items closer together */
+  margin: 0;
+  /* Remove any default margin */
 }
 
 .work-experience h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  /* Slightly reduce the font size */
+  margin-bottom: 5px;
+  /* Reduce space below the title */
   color: #000000;
 }
 
 .work-experience p {
-  margin: 5px 0;
+  margin: 3px 0;
+  /* Reduce space between paragraphs */
   color: #2c2c2c;
 }
