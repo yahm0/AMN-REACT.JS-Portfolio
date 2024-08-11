@@ -8,8 +8,8 @@ function AboutMe() {
       {/* Bio Section */}
       <div className="cards-container bio-container">
         <section className="about-me-card">
-          <p>
-            I am a relentless advocate for technology's power to transform businesses, with a proven record of steering IT operations and software development to new heights. My career is built on a foundation of strategic thinking, technical mastery, and an unyielding commitment to excellence. I don't just follow industry trends; I anticipate them, ensuring the organizations I partner with are always a step ahead.
+          <h2>Director of Information Technology specializing in transformative thinking,</h2>
+          <p>I am a relentless advocate for technology's power to transform businesses, with a proven record of steering IT operations and software development to new heights. My career is built on a foundation of strategic thinking, technical mastery, and an unyielding commitment to excellence. I don't just follow industry trends; I anticipate them, ensuring the organizations I partner with are always a step ahead.
 
             In my hands, technology isn't just a tool; it's a catalyst for change. I’ve led teams that have not only met deadlines and budgets but have shattered expectations, delivering solutions that drive operational efficiency and elevate customer experiences. My approach is simple yet profound: leverage cutting-edge technology to solve real-world problems, creating competitive advantages that are both sustainable and impactful.
 
@@ -24,7 +24,6 @@ function AboutMe() {
 
       <section className="about-me-header">
         <img src="/assets/imgs/profilepicture.jpg" alt="Developer" />
-        <h2>About Me</h2>
       </section>
 
       {/* Work Experiences Section */}

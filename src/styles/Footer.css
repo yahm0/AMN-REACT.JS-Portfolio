@@ -5,11 +5,13 @@
   color: #000000;
   /* Set the text color to black */
   text-align: center;
-  position: fixed;
+  position: relative;
+  /* Change position to relative to allow footer to stay at the bottom of the content */
   width: 100%;
-  bottom: 0;
   border-top: none;
   /* Remove the top border */
+  margin-top: 2rem;
+  /* Add some space above the footer */
 }
 
 .footer p {
