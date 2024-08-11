@@ -18,7 +18,12 @@ function TestimonialsSlider() {
     const testimonials = [
         {
             name: 'Landon Beard',
-            quote: 'Starting my first IT job under Adams guidance has been an incredible journey. He taught me the ropes with patience and precision, making complex systems seem manageable. His unwavering support and clear instructions helped me grow into my position with ease. Adam's expertise and leadership turned our service desk into a model of efficiency.He’s a true leader who inspires confidence and camaraderie in every project.I couldn’t have asked for a better mentor to start my career.',
+            quote: `Starting my first IT job under Adam's guidance has been an incredible journey. 
+                    He taught me the ropes with patience and precision, making complex systems seem manageable. 
+                    His unwavering support and clear instructions helped me grow into my position with ease. 
+                    Adam's expertise and leadership turned our service desk into a model of efficiency. 
+                    He’s a true leader who inspires confidence and camaraderie in every project. 
+                    I couldn’t have asked for a better mentor to start my career.`,
             role: 'IT Specialist at Stan Weaver.',
         },
         {
