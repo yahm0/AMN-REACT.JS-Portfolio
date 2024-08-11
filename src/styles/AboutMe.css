@@ -32,6 +32,18 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.about-me-card h2 {
+  text-align: left;
+  /* Set the heading to left-aligned to avoid large spaces */
+  margin-bottom: 1rem;
+  /* Adjust the spacing below the heading */
+}
+
+.about-me-card p {
+  text-align: justify;
+  /* Keep the paragraphs justified */
+}
+
 .about-me-header {
   width: 100%;
   text-align: center;
