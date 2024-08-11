@@ -1,9 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
-  /* Set background color to white */
   color: #000000;
-  /* Set text color to black */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,71 +15,117 @@ h4,
 h5,
 h6 {
   font-family: 'Merriweather', serif;
-  /* Use 'Merriweather' for an elegant, serif look */
   color: #000000;
-  /* Set heading color to black */
   line-height: 1.3;
-  /* Adjust line-height for better readability */
   letter-spacing: 0.02em;
-  /* Slight letter-spacing for an elegant feel */
 }
 
 /* Links */
 a {
   color: #000000;
-  /* Set link color to black */
   text-decoration: none;
   transition: color 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transition for hover effect and potential shadow */
 }
 
 a:hover,
 a.active {
   color: #E6E6FA;
-  /* Change to lavender on hover and active state */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  /* Add a subtle shadow on hover and active state for a refined effect */
 }
 
 /* General Layout Enhancements */
 .container {
   max-width: 1200px;
-  /* Set a maximum width for the main content area */
   margin: 0 auto;
-  /* Center the content */
   padding: 1rem;
-  /* Add padding for breathing space */
 }
 
 p {
   line-height: 1.6;
-  /* Set line-height for paragraphs for better readability */
   letter-spacing: 0.02em;
-  /* Slight letter-spacing for a polished look */
   margin-bottom: 1rem;
-  /* Space between paragraphs */
 }
 
 button {
   font-family: 'Merriweather', serif;
-  /* Match button font with the overall design */
   padding: 0.5rem 1rem;
-  /* Add padding for a comfortable click area */
   border: none;
   border-radius: 4px;
   background-color: #000000;
-  /* Use black for button background */
   color: #ffffff;
-  /* White text on black button */
   transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Smooth transitions for hover effects */
 }
 
 button:hover {
   background-color: #E6E6FA;
-  /* Change button background to lavender on hover */
   color: #000000;
-  /* Switch text color to black on hover */
   transform: scale(1.05);
-  /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }

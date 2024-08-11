@@ -32,20 +32,15 @@
     position: absolute;
     bottom: -5px;
     left: -10%;
-    /* Adjusted to start from the left */
     width: 120%;
-    /* Increased to expand to both sides */
     height: 2px;
     background-color: #8c8cff;
-    transition: width 0.3s ease, left 0.3s ease;
-    /* Added transition for left */
+    transition: width 0.5s ease, left 0.5s ease;
 }
 
 .testimonials-slider h2:hover::after {
     width: 120%;
-    /* Adjusted to expand */
     left: -10%;
-    /* Adjusted to maintain centering */
 }
 
 .testimonials-slider h2:hover {
@@ -99,4 +94,53 @@
     display: flex !important;
     padding: 0 10px;
     box-sizing: border-box;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-slider {
+        padding: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonials-slider h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial {
+        padding: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial h4 {
+        font-size: 1.3rem;
+    }
+
+    .testimonial h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-slider {
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonials-slider h2 {
+        font-size: 1.6rem;
+    }
+
+    .testimonial {
+        padding: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial h4 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial h5 {
+        font-size: 1rem;
+    }
 }

@@ -9,6 +9,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #ffffff;
+  transition: padding 0.3s ease;
 }
 
 .bio-container {
@@ -34,14 +35,11 @@
 
 .about-me-card h2 {
   text-align: left;
-  /* Set the heading to left-aligned to avoid large spaces */
   margin-bottom: 1rem;
-  /* Adjust the spacing below the heading */
 }
 
 .about-me-card p {
   text-align: justify;
-  /* Keep the paragraphs justified */
 }
 
 .about-me-header {
@@ -139,4 +137,45 @@ h3:hover {
 
 h3:hover::after {
   width: 120%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .about-me-container {
+    padding: 1.5rem;
+  }
+
+  .about-me-card {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about-me-header img {
+    width: 200px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-me-container {
+    padding: 1rem;
+  }
+
+  .about-me-card {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .about-me-header img {
+    width: 150px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
 }

@@ -25,9 +25,7 @@
 
 nav {
   margin-left: auto;
-  /* Push the navbar to the right */
   padding-right: 2rem;
-  /* Add padding to the right to bring the navbar inwards */
 }
 
 nav ul {
@@ -82,5 +80,64 @@ nav ul li a.active::before {
 body,
 .main-content {
   padding-top: 70px;
-  /* Adjust padding-top to match the height of your header */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    padding-right: 0;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav {
+    margin-left: 0;
+  }
 }

@@ -54,3 +54,36 @@
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 1.5rem;
+    margin: 30px auto;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 1rem;
+    margin: 20px auto;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
