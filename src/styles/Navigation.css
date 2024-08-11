@@ -17,13 +17,13 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #E6E6FA;
   /* Lavender color for hover background */
-  color: #000000;
-  /* Keep text color black on hover */
+  color: #000000 !important;
+  /* Ensure text color remains black on hover */
 }
 
 nav ul li a.active {
   background-color: #E6E6FA;
   /* Lavender color for active background */
-  color: #000000;
-  /* Keep text color black for active state */
+  color: #000000 !important;
+  /* Ensure text color remains black for active state */
 }
