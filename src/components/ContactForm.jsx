@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com';
 import '../styles/ContactForm.css';
 
 function ContactForm() {
-  // State variables to manage form inputs and errors
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -62,40 +61,43 @@ function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <div>
-        <label>Name:</label>
+      <div className="form-group">
+        <label htmlFor="name">Name:</label>
         <input
+          id="name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          onBlur={() => !name && setErrors({ ...errors, name: 'Name is required' })}
+          aria-invalid={errors.name ? "true" : "false"}
+          aria-describedby="name-error"
         />
-        {errors.name && <span>{errors.name}</span>}
+        {errors.name && <span id="name-error" className="error">{errors.name}</span>}
       </div>
-      <div>
-        <label>Email:</label>
+      <div className="form-group">
+        <label htmlFor="email">Email:</label>
         <input
+          id="email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          onBlur={() => {
-            if (!email) setErrors({ ...errors, email: 'Email is required' });
-            else if (!validateEmail(email)) setErrors({ ...errors, email: 'Invalid email address' });
-          }}
+          aria-invalid={errors.email ? "true" : "false"}
+          aria-describedby="email-error"
         />
-        {errors.email && <span>{errors.email}</span>}
+        {errors.email && <span id="email-error" className="error">{errors.email}</span>}
       </div>
-      <div>
-        <label>Message:</label>
+      <div className="form-group">
+        <label htmlFor="message">Message:</label>
         <textarea
+          id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          onBlur={() => !message && setErrors({ ...errors, message: 'Message is required' })}
+          aria-invalid={errors.message ? "true" : "false"}
+          aria-describedby="message-error"
         ></textarea>
-        {errors.message && <span>{errors.message}</span>}
+        {errors.message && <span id="message-error" className="error">{errors.message}</span>}
       </div>
       <button type="submit">Submit</button>
-      {formStatus && <p>{formStatus}</p>}
+      {formStatus && <p className="form-status" aria-live="polite">{formStatus}</p>}
     </form>
   );
 }
