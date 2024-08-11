@@ -31,6 +31,9 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Ensure the navbar stays horizontal by wrapping items */
   gap: 1.5rem;
   margin: 0;
   padding: 0;
@@ -114,7 +117,9 @@ body,
 
   nav ul {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    /* Ensure navbar stays horizontal */
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
@@ -129,7 +134,10 @@ body,
   }
 
   nav ul {
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    /* Keep horizontal on smaller screens */
+    flex-wrap: wrap;
     gap: 0.5rem;
   }
 

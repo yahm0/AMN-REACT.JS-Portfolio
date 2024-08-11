@@ -9,7 +9,7 @@
   max-width: 90%;
   margin: 40px auto;
   font-family: 'Merriweather', serif;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, max-width 0.3s ease;
   min-height: 800px;
 }
 
@@ -98,6 +98,22 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .resume {
+    padding: 2.5rem;
+    min-height: 700px;
+  }
+
+  .resume h2 {
+    font-size: 2.2rem;
+  }
+
+  .resume a.resume-download {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .resume {
     padding: 2rem;

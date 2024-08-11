@@ -9,20 +9,63 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #ffffff;
-  transition: padding 0.3s ease;
+  transition: padding 0.3s ease, max-width 0.3s ease;
 }
 
-/* Remove the background reference from AboutMe.css */
-.about-me-background {
-  /* background-image: url('/assets/imgs/background.jpg'); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Adjustments for maintaining scale on smaller screens */
+@media (max-width: 1024px) {
+  .about-me-container {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .about-me-card {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    padding: 1.5rem;
+  }
+
+  .about-me-card {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about-me-header img {
+    width: 200px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .about-me-card {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .about-me-header img {
+    width: 150px;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
 }
 
 .bio-container {
@@ -150,43 +193,4 @@ h3:hover {
 
 h3:hover::after {
   width: 120%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-me-container {
-    padding: 1.5rem;
-  }
-
-  .about-me-card {
-    padding: 1rem 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  .about-me-header img {
-    width: 200px;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-me-container {
-    padding: 1rem;
-  }
-
-  .about-me-card {
-    padding: 0.75rem 1rem;
-    font-size: 0.85rem;
-  }
-
-  .about-me-header img {
-    width: 150px;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-  }
 }
