@@ -4,13 +4,14 @@
   padding: 2rem;
   text-align: center;
   background-color: #ffffff;
-  /* Change background to white */
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   max-width: 90%;
   margin: 40px auto;
   font-family: 'Merriweather', serif;
   transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 700px;
+  /* Increase the height for a taller card */
 }
 
 .resume:hover {
@@ -25,6 +26,8 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   position: relative;
+  transition: color 0.3s ease;
+  /* Add transition for hover effect */
 }
 
 .resume h2::after {
@@ -36,6 +39,13 @@
   width: 80%;
   height: 2px;
   background-color: #8c8cff;
+  transition: width 0.3s ease;
+  /* Transition for the line expansion */
+}
+
+.resume h2:hover::after {
+  width: 90%;
+  /* Increase the width when hovering */
 }
 
 .resume .pdf-viewer {
