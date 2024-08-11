@@ -12,6 +12,19 @@
   transition: padding 0.3s ease;
 }
 
+/* Remove the background reference from AboutMe.css */
+.about-me-background {
+  /* background-image: url('/assets/imgs/background.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bio-container {
   width: 100%;
 }
@@ -58,36 +71,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
 }
-
-.about-me-background {
-  background-image: url('/assets/imgs/overlapping-white-grey-gradient-circles-background-vector.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100vh;
-  /* Ensure the background covers the entire viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-me-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  background-color: #ffffff;
-  transition: padding 0.3s ease;
-}
-
-/* Other styles remain the same */
-
 
 .work-experiences-container,
 .disciplines-container {
@@ -171,7 +154,6 @@ h3:hover::after {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
   .about-me-container {
     padding: 1.5rem;
   }
@@ -191,7 +173,6 @@ h3:hover::after {
 }
 
 @media (max-width: 480px) {
-
   .about-me-container {
     padding: 1rem;
   }
