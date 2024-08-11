@@ -1,11 +1,13 @@
-/* src/styles/App.css */
-
 /* Basic App Container */
 .App {
   text-align: center;
   margin: 0 auto;
   max-width: 1200px;
   /* Centralize content and restrict the maximum width */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensures the app takes up at least the full viewport height */
 }
 
 /* Main Content Area */
@@ -16,6 +18,8 @@ main {
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
+  flex: 1;
+  /* Allows the main content to expand and push the footer to the bottom */
 }
 
 /* Responsive Grid Layout */
@@ -88,6 +92,20 @@ nav ul li a.active {
   color: #000000 !important;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer - Sticky to the bottom of the page */
+.footer {
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  border-top: none;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Merriweather', serif;
+  position: relative;
 }
 
 /* Media Queries for Responsive Design */
