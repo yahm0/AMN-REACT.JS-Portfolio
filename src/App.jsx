@@ -13,20 +13,21 @@ function App() {
     <Router>
       <div className="App">
         <div className="background-container">
-          <img src={`${process.env.PUBLIC_URL}/assets/imgs/overlapping-white-grey-gradient-circles-background-vector.jpg`} alt="Background" className="background-image" />
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<AboutMe />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/resume" element={<Resume />} />
-            </Routes>
-          </main>
-          <Footer />
+          <img src="/assets/imgs/overlapping-white-grey-gradient-circles-background-vector.jpg" alt="Background" className="background-image" />
         </div>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
-    </Router>
+    </div>
+    </Router >
   );
 }
 
