@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '../styles/ContactForm.css';
 
 function ContactForm() {
@@ -7,6 +8,7 @@ function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
+  const [formStatus, setFormStatus] = useState('');
 
   // Function to validate email format
   const validateEmail = (email) => {
@@ -27,9 +29,34 @@ function ContactForm() {
 
     setErrors(newErrors);
 
-    // If no errors, display success message
+    // If no errors, send the email
     if (Object.keys(newErrors).length === 0) {
-      alert('Form submitted successfully!');
+      const templateParams = {
+        name,
+        email,
+        message,
+      };
+
+      emailjs
+        .send(
+          'service_fe67v65', // Replace with your EmailJS service ID
+          'template_ilwbozg', // Replace with your EmailJS template ID
+          templateParams,
+          'YGdiPj8hHI1ngqYJlx' // Replace with your EmailJS user ID (public key)
+        )
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            setFormStatus('Form submitted successfully!');
+            setName('');
+            setEmail('');
+            setMessage('');
+          },
+          (err) => {
+            console.log('FAILED...', err);
+            setFormStatus('Failed to send the form. Please try again.');
+          }
+        );
     }
   };
 
@@ -68,6 +95,7 @@ function ContactForm() {
         {errors.message && <span>{errors.message}</span>}
       </div>
       <button type="submit">Submit</button>
+      {formStatus && <p>{formStatus}</p>}
     </form>
   );
 }

@@ -1,15 +1,21 @@
-/* src/styles/ContactForm.css */
-
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
   border: 2px solid #d4af37;
-  /* Gold color */
-  background-color: #f8f4e3;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Merriweather', serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form div {
@@ -22,14 +28,26 @@
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #2c2c2c;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.05em;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: 2px solid #2c2c2c;
   border-radius: 5px;
+  background-color: #ffffff;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d4af37;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form span {
@@ -39,16 +57,19 @@
 
 .contact-form button {
   align-self: center;
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2.5rem;
   border: none;
   background-color: #2c2c2c;
   color: #f8f4e3;
   font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
   cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .contact-form button:hover {
   background-color: #d4af37;
-  /* Gold color */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
