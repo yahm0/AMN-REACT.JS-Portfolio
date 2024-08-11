@@ -9,6 +9,18 @@
   /* Ensures the app takes up at least the full viewport height */
 }
 
+/* Background Image Container */
+.background-container {
+  background-image: url('/assets/imgs/overlapping-white-grey-gradient-circles-background-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Main Content Area */
 main {
   padding: 2rem;
@@ -17,7 +29,10 @@ main {
   width: 100%;
   box-sizing: border-box;
   flex: 1;
-  /* Allows the main content to expand and push the footer to the bottom */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* White background with transparency */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Grid Layout */

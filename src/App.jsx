@@ -11,26 +11,20 @@ import './styles/App.css';
 // Main App component
 function App() {
   return (
-    // Router to manage application routing
     <Router>
       <div className="App">
-        {/* Header component to be displayed on all pages */}
-        <Header />
-        <main>
-          {/* Routes component to define the routes of the application */}
-          <Routes>
-            {/* Route for the About Me page */}
-            <Route path="/" element={<AboutMe />} />
-            {/* Route for the Portfolio page */}
-            <Route path="/portfolio" element={<Portfolio />} />
-            {/* Route for the Contact page */}
-            <Route path="/contact" element={<Contact />} />
-            {/* Route for the Resume page */}
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </main>
-        {/* Footer component to be displayed on all pages */}
-        <Footer />
+        <div className="background-container">
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<AboutMe />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </div>
     </Router>
   );
