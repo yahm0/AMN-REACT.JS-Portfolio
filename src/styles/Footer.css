@@ -1,17 +1,42 @@
 .footer {
   padding: 1rem 2rem;
   background-color: #ffffff;
-  /* Set the footer background to white */
   color: #000000;
-  /* Set the text color to black */
   text-align: center;
   position: relative;
-  /* Change position to relative to allow footer to stay at the bottom of the content */
   width: 100%;
   border-top: none;
-  /* Remove the top border */
   margin-top: 2rem;
-  /* Add some space above the footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  /* Add some gap between the icons and the text */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  /* Space out the icons */
+}
+
+.footer-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Add transition effects for hover */
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #E6E6FA;
+  /* Hover background */
 }
 
 .footer p {
@@ -22,11 +47,9 @@
 
 .footer a {
   color: #000000;
-  /* Set link color to black */
   text-decoration: none;
-  margin: 0 0.5rem;
   transition: color 0.3s ease;
-  /* Smooth transition for hover effect */
+  margin: 0 0.5rem;
 }
 
 .footer a:hover,

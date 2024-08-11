@@ -13,7 +13,6 @@
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Merriweather', serif;
-  /* Ensure the header spans the full width of the page */
 }
 
 .header h1 {
@@ -22,12 +21,13 @@
   color: #000000;
   transition: color 0.3s ease;
   margin: 0;
-  /* Remove any default margin */
 }
 
 nav {
   margin-left: auto;
   /* Push the navbar to the right */
+  padding-right: 2rem;
+  /* Add padding to the right to bring the navbar inwards */
 }
 
 nav ul {
