@@ -5,53 +5,112 @@
   gap: 20px;
   padding: 2rem;
   max-width: 800px;
-  /* Restrict the content width to the middle third */
   margin: 0 auto;
-  /* Center the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
 }
 
 .bio-container {
   display: flex;
   align-items: flex-start;
-  /* Align image and text at the top */
   gap: 20px;
-  /* Space between image and text */
   width: 100%;
   justify-content: space-between;
-  /* Ensure content is distributed evenly */
 }
 
 .about-me-card {
   flex: 1;
   text-align: justify;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   background-color: #f8f8f8;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
-  line-height: 1.4;
-  /* Reduce the line-height to make spacing between lines smaller */
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  /* Adjust letter-spacing slightly for a tighter look */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.about-me-header h2 {
-  color: #2c2c2c;
-  margin-bottom: 0.5rem;
-  /* Reduce bottom margin to bring the header closer to the text */
-  font-size: 2rem;
+.about-me-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-header {
+  width: 100%;
+  text-align: left;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-header img {
   border-radius: 8px;
-  /* Soft corners for the image */
-  width: 100%;
-  /* Ensure the image fits within its container */
+  width: 250px;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-header h2 {
   color: #2c2c2c;
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  transition: color 0.3s ease;
+}
+
+.about-me-header h2:hover {
+  color: #000000;
+}
+
+.work-experiences-container,
+.disciplines-container {
+  width: 100%;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  gap: 10px;
+  /* Ensure that the grid has two columns with enough spacing between items */
+}
+
+.work-experience,
+.discipline {
+  background-color: transparent;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-experience:hover,
+.discipline:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.work-experience h4,
+.discipline h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #000000;
+  font-family: 'Merriweather', serif;
+}
+
+.work-experience p,
+.discipline p {
+  margin: 3px 0;
+  color: #2c2c2c;
+}
+
+body,
+.main-content {
+  padding-top: 70px;
 }
