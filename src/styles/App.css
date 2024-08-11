@@ -10,23 +10,25 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  /* Ensures the app takes up at least the full viewport height */
+  /* Ensure the footer stays at the bottom */
 }
 
+/* Background Container */
 .background-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: -1;
   /* Ensure it stays behind other content */
 }
 
 .background-image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure the background covers the full viewport height */
 }
 
 /* Main Content Area */
@@ -38,11 +40,9 @@ main {
   box-sizing: border-box;
   flex: 1;
   background-color: rgba(255, 255, 255, 0.8);
-  /* White background with transparency */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  /* Ensure content appears above the background */
 }
 
 /* Responsive Grid Layout */
@@ -126,7 +126,6 @@ nav ul li a.active {
   margin-top: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Merriweather', serif;
-  position: relative;
   flex-shrink: 0;
   /* Ensure the footer stays at the bottom */
 }

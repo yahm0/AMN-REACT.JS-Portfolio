@@ -8,7 +8,6 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './styles/App.css';
 
-// Main App component
 function App() {
   return (
     <Router>
