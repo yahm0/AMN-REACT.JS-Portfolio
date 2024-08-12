@@ -56,6 +56,10 @@
   /* Padding at the bottom of the title for space between text and the lavender line */
 }
 
+.project h3:hover {
+  color: #8c8cff;
+}
+
 /* Pseudo-element for the lavender line below the title */
 .project h3::after {
   content: '';

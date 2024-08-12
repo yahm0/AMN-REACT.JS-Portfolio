@@ -37,6 +37,7 @@ const projects = [
   {
     title: 'Accurate Employee Tracker',
     image: '/assets/imgs/AET.jpg',
+    deployedLink: '',
     repoLink: 'https://github.com/yahm0/Accurate-Employee-Tracker'
   },
   // {

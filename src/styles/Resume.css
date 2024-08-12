@@ -28,6 +28,10 @@
   transition: color 0.3s ease;
 }
 
+.resume h2:hover {
+  color: #8c8cff;
+}
+
 .resume h2::after {
   content: '';
   position: absolute;
