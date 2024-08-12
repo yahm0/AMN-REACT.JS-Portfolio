@@ -6,7 +6,7 @@ import '../styles/Portfolio.css';
 const projects = [
   {
     title: 'Book Search Engine and Manager',
-    image: '',
+    image: '/assets/imgs/books.jpg',
     deployedLink: 'https://book-search-engine-and-manager-16b16f7fd358.herokuapp.com/',
     repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager'
   },
