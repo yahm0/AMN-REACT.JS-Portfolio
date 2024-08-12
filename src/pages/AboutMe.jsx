@@ -37,6 +37,11 @@ function AboutMe() {
           <div className="grid-layout">
             <div className="work-experience">
               <h4>Founder</h4>
+              <p>Green Pipe Analytics</p>
+              <p>January 2024 – Present</p>
+            </div>
+            <div className="work-experience">
+              <h4>Founder</h4>
               <p>Terminal Software</p>
               <p>January 2023 – Present</p>
             </div>
@@ -59,11 +64,6 @@ function AboutMe() {
               <h4>Network Specialist</h4>
               <p>ITS Group (MSP)</p>
               <p>January 2021 – February 2022</p>
-            </div>
-            <div className="work-experience">
-              <h4>Software Quality Assurance</h4>
-              <p>Fairfax Imaging</p>
-              <p>October 2018 – October 2019</p>
             </div>
           </div>
         </div>
