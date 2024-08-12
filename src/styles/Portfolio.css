@@ -1,10 +1,123 @@
 /* src/styles/Portfolio.css */
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
   padding: 2rem;
   background-color: #ffffff;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Merriweather', serif;
+  text-align: left;
+  border: 2px solid #d4af37;
+  /* Gold color to match the project border */
+}
+
+.portfolio-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+  position: relative;
+  /* Required for pseudo-elements */
+  transition: color 0.3s ease;
+}
+
+.portfolio-item h3::before,
+.portfolio-item h3::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #8c8cff;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.portfolio-item h3::before {
+  bottom: -5px;
+  /* Positioning the line below the text */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolio-item h3::after {
+  bottom: -5px;
+  /* Positioning the line below the text */
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.portfolio-item h3:hover::before,
+.portfolio-item h3:hover::after {
+  width: 100%;
+  /* Expands the line in both directions */
+}
+
+.portfolio-item p {
+  font-size: 1rem;
+  color: #2c2c2c;
+  line-height: 1.5;
+}
+
+.portfolio-item a {
+  color: #8c8cff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+  color: #2c2c2c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    padding: 1rem;
+  }
+
+  .portfolio-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .portfolio-item {
+    padding: 0.75rem;
+  }
+
+  .portfolio-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-item p {
+    font-size: 0.85rem;
+  }
 }

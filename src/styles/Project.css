@@ -1,35 +1,164 @@
-/* src/styles/Project.css */
-
+/* Project container styling */
 .project {
-  border: 2px solid #ffffff;
-  /* Gold color */
   padding: 1rem;
-  margin: 1rem;
+  /* Padding inside the project container */
+  margin: 0;
+  /* No margin around the project container */
   text-align: center;
+  /* Center-align text inside the project container */
   background-color: #ffffff;
+  /* White background color for the project container */
+  border-radius: 8px;
+  /* Rounded corners for the project container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for a raised effect */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  /* Smooth transition for hover effects */
+  font-family: 'Merriweather', serif;
+  /* Serif font family for text inside the project container */
 }
 
+/* Image styling inside the project container */
 .project img {
-  max-width: 100%;
+  width: 100%;
+  /* Image takes full width of its container */
   height: auto;
-  border-bottom: 2px solid #ffffff;
-  /* Gold color */
+  /* Height is adjusted automatically based on the image aspect ratio */
+  max-height: 200px;
+  /* Maximum height for the image to ensure consistency */
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  border-radius: 8px 8px 0 0;
+  /* Rounded corners at the top of the image */
+  margin-bottom: 1rem;
+  /* Margin below the image */
+  transition: filter 0.3s ease-in-out;
+  /* Smooth transition for filter effect on hover */
 }
 
+/* Hover effect for images */
+.project img:hover {
+  filter: brightness(0.8) contrast(1.2) saturate(1.3);
+  /* Shader effect to enhance the image on hover */
+}
+
+/* Title (h3) styling inside the project container */
 .project h3 {
   color: #2c2c2c;
+  /* Dark gray color for the title text */
+  font-size: 1.5rem;
+  /* Font size for the title */
+  margin-bottom: 1rem;
+  /* Margin below the title */
+  position: relative;
+  /* Relative positioning for pseudo-element placement */
+  padding-bottom: 0.5rem;
+  /* Padding at the bottom of the title for space between text and the lavender line */
 }
 
-.project a {
-  display: block;
-  margin: 0.5rem 0;
+/* Pseudo-element for the lavender line below the title */
+.project h3::after {
+  content: '';
+  /* No content, used purely for styling */
+  position: absolute;
+  /* Absolute positioning within the h3 element */
+  bottom: 0;
+  /* Positioned at the bottom of the h3 element */
+  left: 50%;
+  /* Positioned in the center horizontally */
+  transform: translateX(-50%);
+  /* Center-aligns the pseudo-element */
+  height: 2px;
+  /* Thickness of the lavender line */
+  width: 85%;
+  /* Initial width of the lavender line */
+  background-color: #8c8cff;
+  /* Lavender color for the line */
+  transition: width 0.3s ease-in-out;
+  /* Smooth transition for the line's width expansion */
+}
+
+/* Hover effect for the lavender line under the title */
+.project h3:hover::after {
+  width: 105%;
+  /* Expands the lavender line width on hover */
+}
+
+/* Paragraph (p) styling inside the project container */
+.project p {
+  font-size: 1rem;
+  /* Font size for paragraph text */
   color: #2c2c2c;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  /* Dark gray color for paragraph text */
+  margin-bottom: 1rem;
+  /* Margin below the paragraph */
 }
 
+/* Link (a) styling inside the project container */
+.project a {
+  display: inline-block;
+  /* Displays the link as an inline-block element */
+  padding: 0.5rem 1rem;
+  /* Padding inside the link */
+  margin-top: 0.5rem;
+  /* Margin above the link */
+  margin-right: 0.5rem;
+  /* Margin to the right of the link */
+  color: #f8f4e3;
+  /* Off-white color for the link text */
+  text-decoration: none;
+  /* Removes underline from the link text */
+  font-weight: bold;
+  /* Bold font weight for the link text */
+  background-color: #2c2c2c;
+  /* Initial black background for the link */
+  border-radius: 5px;
+  /* Rounded corners for the link */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth transition for background color and scale on hover */
+}
+
+/* Styling for the last link to remove extra right margin */
+.project a:last-child {
+  margin-right: 0;
+  /* No margin on the right for the last link */
+}
+
+/* Hover effect for links */
 .project a:hover {
-  color: #d4af37;
-  /* Gold color */
+  background-color: #8c8cff;
+  /* Changes the background color to lavender on hover */
+  transform: scale(1.05);
+  /* Slightly enlarges the link on hover */
+}
+
+/* Hover effect for the entire project container */
+.project:hover {
+  transform: scale(1.02);
+  /* Slightly enlarges the project container on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Darkens the shadow for a more pronounced effect */
+  background-color: #f0f0f0;
+  /* Lightens the background color slightly on hover */
+}
+
+/* Responsive styling for medium-sized screens */
+@media (max-width: 768px) {
+  .project h3 {
+    font-size: 1.3rem;
+    /* Slightly smaller font size for titles on medium screens */
+  }
+
+  .project p {
+    font-size: 0.9rem;
+    /* Slightly smaller font size for paragraphs on medium screens */
+  }
+
+  .project a {
+    padding: 0.4rem 0.8rem;
+    /* Adjusted padding for links on medium screens */
+    font-size: 0.9rem;
+    /* Slightly smaller font size for links on medium screens */
+    margin-right: 0.4rem;
+  }
 }
