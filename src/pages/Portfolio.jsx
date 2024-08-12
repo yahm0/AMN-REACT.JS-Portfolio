@@ -11,10 +11,10 @@ const projects = [
     repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager'
   },
   {
-    title: 'PWA Text Editor',
+    title: 'Green Pipe Analytics Website',
     image: '',
-    deployedLink: 'https://pwa-text-editor-y0ld.onrender.com/',
-    repoLink: 'https://github.com/yahm0/PWA-Text-Editor'
+    deployedLink: 'https://greenpipeanalytics.com',
+    repoLink: 'https://github.com/yahm0/Green-Pipe-Analytics-Website'
   },
   {
     title: 'Terminal Softwares Website',
@@ -34,6 +34,17 @@ const projects = [
     deployedLink: 'https://eventii-management-platform-l6xt.onrender.com/',
     repoLink: 'https://github.com/yahm0/Eventii-Management-Platform'
   },
+  {
+    title: 'Accurate Employee Tracker',
+    image: '/assets/imgs/AET.jpg',
+    repoLink: 'https://github.com/yahm0/Accurate-Employee-Tracker'
+  },
+  // {
+  //   title: 'Muscle Growth Near Me',
+  //   image: '',
+  //   deployedLink: 'https://yahm0.github.io/Muscle-Growth-Near-Me/',
+  //   repoLink: 'https://github.com/yahm0/Gym-Finder'
+  // },
   // Add more projects as needed
 ];
 
