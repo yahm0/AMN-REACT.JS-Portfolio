@@ -30,7 +30,7 @@ function TestimonialsSlider() {
         },
         {
             name: 'Tye Stanley',
-            quote: 'I have had the pleasure of guiding Adam through their full stack web development journey, during which they consistently demonstrated exceptional communication skills. Their dedication, quick learning ability, and creative problem-solving approach consistently impressed me throughout our time working together. Adam has developed a robust skill set in both front-end and back-end technologies, coupled with the ability to articulate complex concepts clearly, making them an invaluable asset to any development team fortunate enough to have them.',
+            quote: 'I have had the pleasure of helping guide Adam through their full stack web development journey, during which he consistently demonstrated exceptional communication skills. His dedication, quick learning ability, and creative problem-solving approach consistently impressed me throughout our time working together. Adam has developed a robust skill set in both front-end and back-end technologies, coupled with the ability to articulate complex concepts clearly, making him an invaluable asset to any development team fortunate enough to have them.',
             role: 'Teaching Assistant at University of Texas at Austin', // Role of the person giving the testimonial
         },
         {
