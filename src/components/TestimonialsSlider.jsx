@@ -34,9 +34,9 @@ function TestimonialsSlider() {
             role: 'Teaching Assistant at University of Texas at Austin', // Role of the person giving the testimonial
         },
         {
-            name: ' ',
-            quote: ' ',
-            role: ' ', // Role of the person giving the testimonial
+            name: 'Josh Ray',
+            quote: 'Adam Nuccios vision and decisiveness simplify tasks and processes, allowing the team to focus on important milestones. His attention to detail creates an environment dedicated to precision and excellence in every facet.',
+            role: 'Electronic Technician Second Class', // Role of the person giving the testimonial
         },
     ];
 
