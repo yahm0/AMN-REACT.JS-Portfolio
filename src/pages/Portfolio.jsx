@@ -6,7 +6,7 @@ import '../styles/Portfolio.css';
 const projects = [
   {
     title: 'Green Pipe Analytics Website',
-    image: '',
+    image: '/assets/imgs/GPA Home.jpg',
     deployedLink: 'https://greenpipeanalytics.com',
     repoLink: 'https://github.com/yahm0/Green-Pipe-Analytics-Website'
   },
