@@ -47,18 +47,20 @@ nav ul li a {
   color: #000000;
   text-decoration: none;
   font-size: 1.2rem;
-  transition: color 0.3s ease, transform 0.3s;
+  transition:
+    color 0.3s ease,
+    transform 0.3s;
   font-family: 'Merriweather', serif;
 }
 
 nav ul li a:hover {
-  color: #E6E6FA;
+  color: #e6e6fa;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 nav ul li a.active {
-  color: #E6E6FA;
+  color: #e6e6fa;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -70,8 +72,10 @@ nav ul li a::before {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #E6E6FA;
-  transition: width 0.3s ease, left 0.3s ease;
+  background-color: #e6e6fa;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
 }
 
 nav ul li a:hover::before,
@@ -148,4 +152,25 @@ body,
   nav {
     margin-left: 0;
   }
+}
+
+/* Styles for the logo button to match navigation links */
+.logo-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0;
+}
+
+.logo-button:hover {
+  color: #8c8cff;
+  transform: scale(1.05);
+}
+
+.logo-button:focus {
+  outline: none;
 }

@@ -10,7 +10,9 @@
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   font-family: 'Merriweather', serif;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   box-sizing: border-box;
 }
 
@@ -48,7 +50,9 @@
   font-family: 'Merriweather', serif;
   font-size: 1rem;
   color: #2c2c2c;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
   box-sizing: border-box;
   /* Ensure padding and border are included in the element's width */
 }
@@ -76,7 +80,10 @@
   font-family: 'Merriweather', serif;
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }

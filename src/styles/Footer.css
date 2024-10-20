@@ -26,13 +26,15 @@
   height: 40px;
   background-color: #f0f0f0;
   border-radius: 50%;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .footer-icons a:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #E6E6FA;
+  background-color: #e6e6fa;
 }
 
 .footer p {

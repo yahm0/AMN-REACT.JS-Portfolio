@@ -12,7 +12,10 @@
   /* Rounded corners for the project container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for a raised effect */
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
   /* Smooth transition for hover effects */
   font-family: 'Merriweather', serif;
   /* Serif font family for text inside the project container */
@@ -118,7 +121,9 @@
   /* Initial black background for the link */
   border-radius: 5px;
   /* Rounded corners for the link */
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
   /* Smooth transition for background color and scale on hover */
 }
 

@@ -8,16 +8,16 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './styles/App.css';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className='App'>
         {/* Background container with image */}
-        <div className="background-container">
+        <div className='background-container'>
           <img
             src={`${process.env.PUBLIC_URL}/assets/imgs/background.jpg`}
-            alt="Background"
-            className="background-image"
+            alt='Background'
+            className='background-image'
           />
         </div>
 
@@ -26,10 +26,10 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path='/' element={<AboutMe />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/resume' element={<Resume />} />
           </Routes>
         </main>
 
@@ -38,6 +38,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

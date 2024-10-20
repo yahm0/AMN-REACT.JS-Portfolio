@@ -34,14 +34,15 @@ function ContactForm() {
         name,
         email,
         message,
+        to_email: 'info@greenpipeanalytics.com', // Ensure this matches your EmailJS template
       };
 
       emailjs
         .send(
-          'service_fe67v65', // Replace with your EmailJS service ID
-          'template_ilwbozg', // Replace with your EmailJS template ID
+          process.env.REACT_APP_EMAILJS_SERVICE_ID, // Service ID from environment variables
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Template ID from environment variables
           templateParams,
-          'YGdiPj8hHI1ngqYJlx' // Replace with your EmailJS user ID (public key)
+          process.env.REACT_APP_EMAILJS_USER_ID // User ID (public key) from environment variables
         )
         .then(
           (response) => {
@@ -60,44 +61,60 @@ function ContactForm() {
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="name">Name:</label>
+    <form className='contact-form' onSubmit={handleSubmit}>
+      <div className='form-group'>
+        <label htmlFor='name'>Name:</label>
         <input
-          id="name"
-          type="text"
+          id='name'
+          type='text'
           value={name}
           onChange={(e) => setName(e.target.value)}
-          aria-invalid={errors.name ? "true" : "false"}
-          aria-describedby="name-error"
+          aria-invalid={errors.name ? 'true' : 'false'}
+          aria-describedby='name-error'
         />
-        {errors.name && <span id="name-error" className="error">{errors.name}</span>}
+        {errors.name && (
+          <span id='name-error' className='error'>
+            {errors.name}
+          </span>
+        )}
       </div>
-      <div className="form-group">
-        <label htmlFor="email">Email:</label>
+      <div className='form-group'>
+        <label htmlFor='email'>Email:</label>
         <input
-          id="email"
-          type="email"
+          id='email'
+          type='email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          aria-invalid={errors.email ? "true" : "false"}
-          aria-describedby="email-error"
+          aria-invalid={errors.email ? 'true' : 'false'}
+          aria-describedby='email-error'
         />
-        {errors.email && <span id="email-error" className="error">{errors.email}</span>}
+        {errors.email && (
+          <span id='email-error' className='error'>
+            {errors.email}
+          </span>
+        )}
       </div>
-      <div className="form-group">
-        <label htmlFor="message">Message:</label>
+      <div className='form-group'>
+        <label htmlFor='message'>Message:</label>
         <textarea
-          id="message"
+          id='message'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          aria-invalid={errors.message ? "true" : "false"}
-          aria-describedby="message-error"
+          aria-invalid={errors.message ? 'true' : 'false'}
+          aria-describedby='message-error'
         ></textarea>
-        {errors.message && <span id="message-error" className="error">{errors.message}</span>}
+        {errors.message && (
+          <span id='message-error' className='error'>
+            {errors.message}
+          </span>
+        )}
       </div>
-      <button type="submit">Submit</button>
-      {formStatus && <p className="form-status" aria-live="polite">{formStatus}</p>}
+      <button type='submit'>Submit</button>
+      {formStatus && (
+        <p className='form-status' aria-live='polite'>
+          {formStatus}
+        </p>
+      )}
     </form>
   );
 }
