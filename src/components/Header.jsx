@@ -4,9 +4,9 @@ import '../styles/Header.css';
 
 function Header() {
   return (
-    <header className="header">
-      <h1>Adam Nuccio</h1>
-      <div className="nav-container">
+    <header className='header'>
+      <button className='logo-button' onClick={() => window.location.href = '/'}>Adam Nuccio</button>
+      <div className='nav-container'>
         <Navigation />
       </div>
     </header>

@@ -4,15 +4,21 @@ import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'; // Impor
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-icons">
-        <a href="https://github.com/yahm0" aria-label="GitHub">
+    <footer className='footer'>
+      <div className='footer-icons'>
+        <a href='https://github.com/yahm0' aria-label='GitHub'>
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/adam-nuccio/" aria-label="LinkedIn">
+        <a
+          href='https://www.linkedin.com/in/adam-nuccio/'
+          aria-label='LinkedIn'
+        >
           <FaLinkedin />
         </a>
-        <a href="https://stackoverflow.com/users/25155278/yahmo" aria-label="Stack Overflow">
+        <a
+          href='https://stackoverflow.com/users/25155278/yahmo'
+          aria-label='Stack Overflow'
+        >
           <FaStackOverflow />
         </a>
       </div>

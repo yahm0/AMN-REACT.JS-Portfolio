@@ -9,7 +9,10 @@
   max-width: 90%;
   margin: 40px auto;
   font-family: 'Merriweather', serif;
-  transition: transform 0.3s, box-shadow 0.3s, max-width 0.3s ease;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    max-width 0.3s ease;
   min-height: 800px;
 }
 
@@ -78,7 +81,10 @@
   font-size: 1.2rem;
   border-radius: 8px;
   text-decoration: none;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    background-color 0.3s,
+    box-shadow 0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

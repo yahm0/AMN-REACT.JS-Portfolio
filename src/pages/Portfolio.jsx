@@ -8,37 +8,38 @@ const projects = [
     title: 'Green Pipe Analytics Website',
     image: '/assets/imgs/GPA Home.jpg',
     deployedLink: 'https://greenpipeanalytics.com',
-    repoLink: 'https://github.com/yahm0/Green-Pipe-Analytics-Website'
+    repoLink: 'https://github.com/yahm0/Green-Pipe-Analytics-Website',
   },
   {
     title: 'Terminal Softwares Website',
     image: '',
     deployedLink: 'https://terminalsoftware.gg',
-    repoLink: 'https://github.com/yahm0/Terminal-Software-Website'
+    repoLink: 'https://github.com/yahm0/Terminal-Software-Website',
   },
   {
     title: 'Junk Twitter',
     image: '',
     deployedLink: 'https://junk-twitter-1f692e920bc6.herokuapp.com/login',
-    repoLink: 'https://github.com/yahm0/Junk-Twitter'
+    repoLink: 'https://github.com/yahm0/Junk-Twitter',
   },
   {
     title: 'Book Search Engine and Manager',
     image: '/assets/imgs/books.jpg',
-    deployedLink: 'https://book-search-engine-and-manager-16b16f7fd358.herokuapp.com/',
-    repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager'
+    deployedLink:
+      'https://book-search-engine-and-manager-16b16f7fd358.herokuapp.com/',
+    repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager',
   },
   {
     title: 'Eventii Management Platform',
     image: '',
     deployedLink: 'https://eventii-management-platform-l6xt.onrender.com/',
-    repoLink: 'https://github.com/yahm0/Eventii-Management-Platform'
+    repoLink: 'https://github.com/yahm0/Eventii-Management-Platform',
   },
   {
     title: 'Accurate Employee Tracker',
     image: '/assets/imgs/AET.jpg',
     deployedLink: '',
-    repoLink: 'https://github.com/yahm0/Accurate-Employee-Tracker'
+    repoLink: 'https://github.com/yahm0/Accurate-Employee-Tracker',
   },
   // {
   //   title: 'Muscle Growth Near Me',
@@ -51,7 +52,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <section className="portfolio">
+    <section className='portfolio'>
       {/* Map over the projects array to render a Project component for each project */}
       {projects.map((project, index) => (
         <Project

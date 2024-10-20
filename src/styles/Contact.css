@@ -7,7 +7,9 @@
   max-width: 90%;
   margin: 40px auto;
   font-family: 'Merriweather', serif;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .contact:hover {
@@ -38,7 +40,9 @@
   width: 120%;
   height: 2px;
   background-color: #8c8cff;
-  transition: width 0.3s ease, left 0.3s ease;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
 }
 
 .contact h2:hover::after {
