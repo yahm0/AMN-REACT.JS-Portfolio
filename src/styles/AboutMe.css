@@ -44,7 +44,7 @@
   }
 
   .about-me-header img {
-    width: 200px;
+    width: 300px;
   }
 
   h3 {
@@ -66,7 +66,7 @@
   }
 
   .about-me-header img {
-    width: 150px;
+    width: 225px;
   }
 
   h3 {
@@ -117,7 +117,7 @@
 
 .about-me-header img {
   border-radius: 8px;
-  width: 250px;
+  width: 375px;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;

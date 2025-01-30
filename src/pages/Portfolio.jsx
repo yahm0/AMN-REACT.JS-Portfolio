@@ -17,12 +17,6 @@ const projects = [
     repoLink: 'https://github.com/yahm0/Terminal-Software-Website',
   },
   {
-    title: 'Junk Twitter',
-    image: '',
-    deployedLink: 'https://junk-twitter-1f692e920bc6.herokuapp.com/login',
-    repoLink: 'https://github.com/yahm0/Junk-Twitter',
-  },
-  {
     title: 'Book Search Engine and Manager',
     image: '/assets/imgs/books.jpg',
     deployedLink:
@@ -30,24 +24,17 @@ const projects = [
     repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager',
   },
   {
-    title: 'Eventii Management Platform',
+    title: 'Coming Soon...',
     image: '',
-    deployedLink: 'https://eventii-management-platform-l6xt.onrender.com/',
-    repoLink: 'https://github.com/yahm0/Eventii-Management-Platform',
+    deployedLink: '#',
+    repoLink: '#',
   },
   {
-    title: 'Accurate Employee Tracker',
-    image: '/assets/imgs/AET.jpg',
-    deployedLink: '',
-    repoLink: 'https://github.com/yahm0/Accurate-Employee-Tracker',
+    title: 'Coming Soon...',
+    image: '',
+    deployedLink: '#',
+    repoLink: '#',
   },
-  // {
-  //   title: 'Muscle Growth Near Me',
-  //   image: '',
-  //   deployedLink: 'https://yahm0.github.io/Muscle-Growth-Near-Me/',
-  //   repoLink: 'https://github.com/yahm0/Gym-Finder'
-  // },
-  // Add more projects as needed
 ];
 
 function Portfolio() {
