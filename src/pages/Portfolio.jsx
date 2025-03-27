@@ -24,17 +24,23 @@ const projects = [
     repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager',
   },
   {
-    title: 'Coming Soon...',
-    image: '',
-    deployedLink: '#',
-    repoLink: '#',
+    title: 'Infrastructure as Code Example',
+    image: '/assets/imgs/iac_thumbnail.png', // replace with actual path or URL
+    deployedLink: '#', // link to live demo if applicable
+    repoLink: 'https://github.com/yahm0/Infrastructure-as-Code-Example',
   },
   {
-    title: 'Coming Soon...',
-    image: '',
-    deployedLink: '#',
-    repoLink: '#',
+    title: 'Analytics Pipeline Showcase',
+    image: '/assets/imgs/analytics_pipeline.png', // replace with actual path or URL
+    deployedLink: '#', // optional: link to public dashboard or demo
+    repoLink: 'https://github.com/yahm0/Analytics-Pipeline-Showcase',
   },
+  {
+    title: 'Machine Learning with SageMaker',
+    image: '/assets/imgs/sagemaker_demo.png', // replace with actual path or URL
+    deployedLink: '#', // optional: link to API endpoint or demo video
+    repoLink: 'https://github.com/yahm0/Machine-Learning-with-SageMaker',
+  }
 ];
 
 function Portfolio() {
