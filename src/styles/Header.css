@@ -4,23 +4,29 @@
   align-items: center;
   padding: 1rem 2rem;
   background-color: #ffffff;
-  color: #000000;
+  color: #333333;
   border-bottom: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Merriweather', serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
 }
 
 .header h1 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   font-size: 2.5rem;
-  color: #000000;
+  color: #2d5f8b;
   transition: color 0.3s ease;
   margin: 0;
+}
+
+.header h1:hover {
+  color: rgba(45, 95, 139, 0.25);
 }
 
 nav {
@@ -44,23 +50,25 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000000;
+  color: #107896;
   text-decoration: none;
   font-size: 1.2rem;
   transition:
     color 0.3s ease,
     transform 0.3s;
-  font-family: 'Merriweather', serif;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 nav ul li a:hover {
-  color: #e6e6fa;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: rgba(108, 207, 246, 0.25);
+  transform: scale(1.02);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li a.active {
-  color: #e6e6fa;
+  color: #6ccff6;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -72,7 +80,7 @@ nav ul li a::before {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #e6e6fa;
+  background-color: #6ccff6;
   transition:
     width 0.3s ease,
     left 0.3s ease;
@@ -159,16 +167,16 @@ body,
   background: none;
   border: none;
   font-size: 2rem;
-  font-family: 'Merriweather', serif;
-  color: #000000;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  color: #2d5f8b;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
   padding: 0;
 }
 
 .logo-button:hover {
-  color: #8c8cff;
-  transform: scale(1.05);
+  color: rgba(16, 120, 150, 0.25);
+  transform: scale(1.02);
 }
 
 .logo-button:focus {

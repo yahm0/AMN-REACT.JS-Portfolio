@@ -21,13 +21,12 @@ function Navigation() {
             Contact
           </NavLink>
         </li>
-        {/* Commented out Resume link
         <li>
           <NavLink to='/resume' activeClassName='active'>
             Resume
           </NavLink>
         </li>
-        */}
+
       </ul>
     </nav>
   );
