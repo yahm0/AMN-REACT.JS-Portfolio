@@ -7,22 +7,22 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <NavLink exact to='/' activeClassName='active'>
+          <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : undefined)}>
             About Me
           </NavLink>
         </li>
         <li>
-          <NavLink to='/portfolio' activeClassName='active'>
+          <NavLink to='/portfolio' className={({ isActive }) => (isActive ? 'active' : undefined)}>
             Portfolio
           </NavLink>
         </li>
         <li>
-          <NavLink to='/contact' activeClassName='active'>
+          <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : undefined)}>
             Contact
           </NavLink>
         </li>
         <li>
-          <NavLink to='/resume' activeClassName='active'>
+          <NavLink to='/resume' className={({ isActive }) => (isActive ? 'active' : undefined)}>
             Resume
           </NavLink>
         </li>
