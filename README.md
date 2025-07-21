@@ -37,10 +37,10 @@ This is a portfolio project built with React. It showcases the developer's proje
  git clone https://github.com/yahm0/Adam-Nuccio-s-REACT.JS-Portfolio
 ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory (replace with your folder name if different):
 
 ```bash
- cd react-portfolio
+ cd AMN-REACT.JS-Portfolio
 ```
 
 3. Install dependencies:
