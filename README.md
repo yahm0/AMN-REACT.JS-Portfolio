@@ -31,6 +31,8 @@ This is a portfolio project built with React. It showcases the developer's proje
 
 ## 3. Installation
 
+Make sure you have **Node.js 16.x or 18.x** installed before setting up the project.
+
 1. Clone the repository:
 
 ```bash
