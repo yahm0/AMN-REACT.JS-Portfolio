@@ -58,6 +58,8 @@ Make sure you have **Node.js 16.x or 18.x** installed before setting up the proj
  npm start
 ```
 
+**Note:** Opening `public/index.html` directly will display a blank page. Use `npm start` for local development.
+
 ## 4. Usage
 
 Once the development server is running, you can view the portfolio in your browser at http://localhost:3000.
