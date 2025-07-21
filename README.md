@@ -55,6 +55,8 @@ This is a portfolio project built with React. It showcases the developer's proje
  npm start
 ```
 
+**Note:** Opening `public/index.html` directly will display a blank page. Use `npm start` for local development.
+
 ## 4. Usage
 
 Once the development server is running, you can view the portfolio in your browser at http://localhost:3000.
