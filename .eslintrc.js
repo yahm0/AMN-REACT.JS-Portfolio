@@ -1,8 +1,7 @@
 module.exports = {
     extends: [
         'react-app',
-        'react-app/jest',
-        'prettier'
+        'react-app/jest'
     ],
     plugins: ['prettier'],
     rules: {
