@@ -1,7 +1,9 @@
 module.exports = {
     extends: [
         'react-app',
+codex/remove-console.log-from-contactform.jsx
         'react-app/jest'
+main
     ],
     plugins: ['prettier'],
     rules: {
