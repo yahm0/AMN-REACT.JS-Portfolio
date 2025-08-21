@@ -3,12 +3,15 @@
 .portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
-  padding: 2rem;
+  grid-gap: 2rem;
+  padding: 3rem 2rem;
+  padding-top: 5rem;
+  margin-top: 2rem;
   background-color: #ffffff;
   justify-content: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-item {
@@ -90,10 +93,14 @@
 @media (max-width: 768px) {
   .portfolio {
     grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    padding-top: 4rem;
+    margin-top: 1.5rem;
+    grid-gap: 1.5rem;
   }
 
   .portfolio-item {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .portfolio-item h3 {
@@ -108,11 +115,14 @@
 @media (max-width: 480px) {
   .portfolio {
     grid-template-columns: 1fr;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    padding-top: 3rem;
+    margin-top: 1rem;
+    grid-gap: 1rem;
   }
 
   .portfolio-item {
-    padding: 0.75rem;
+    padding: 1rem;
   }
 
   .portfolio-item h3 {
