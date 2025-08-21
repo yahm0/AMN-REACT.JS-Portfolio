@@ -13,6 +13,7 @@ This is a portfolio project built with React. It showcases the developer's proje
 7. [Issues](#7-issues)
 8. [License](#8-license)
 9. [Acknowledgements](#9-acknowledgements)
+10. [Environment Variables](#10-environment-variables)
 
 ## 1. Features
 
@@ -31,16 +32,18 @@ This is a portfolio project built with React. It showcases the developer's proje
 
 ## 3. Installation
 
+Make sure you have **Node.js 16.x or 18.x** installed before setting up the project.
+
 1. Clone the repository:
 
 ```bash
  git clone https://github.com/yahm0/Adam-Nuccio-s-REACT.JS-Portfolio
 ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory (replace with your folder name if different):
 
 ```bash
- cd react-portfolio
+ cd AMN-REACT.JS-Portfolio
 ```
 
 3. Install dependencies:
@@ -54,6 +57,8 @@ This is a portfolio project built with React. It showcases the developer's proje
 ```bash
  npm start
 ```
+
+**Note:** Opening `public/index.html` directly will display a blank page. Use `npm start` for local development.
 
 ## 4. Usage
 
@@ -131,3 +136,15 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - [Google Fonts](https://fonts.google.com/) for font resources
 
 Feel free to customize and expand upon this template to better suit your project and preferences.
+
+## 10. Environment Variables
+
+This project uses EmailJS to handle form submissions. Set the following variables in a `.env` file or in your deployment environment:
+
+```bash
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+REACT_APP_EMAILJS_USER_ID=your_user_id
+```
+
+You can copy `.env.example` to `.env` and replace the placeholder values with your own EmailJS credentials.

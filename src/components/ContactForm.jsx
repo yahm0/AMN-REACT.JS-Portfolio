@@ -46,14 +46,18 @@ function ContactForm() {
         )
         .then(
           (response) => {
-            console.log('SUCCESS!', response.status, response.text);
+            if (process.env.NODE_ENV !== 'production') {
+              console.log('SUCCESS!', response.status, response.text);
+            }
             setFormStatus('Form submitted successfully!');
             setName('');
             setEmail('');
             setMessage('');
           },
           (err) => {
-            console.log('FAILED...', err);
+            if (process.env.NODE_ENV !== 'production') {
+              console.log('FAILED...', err);
+            }
             setFormStatus('Failed to send the form. Please try again.');
           }
         );
