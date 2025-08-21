@@ -15,7 +15,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
@@ -44,6 +44,13 @@
   [headers.values]
     Content-Type = "application/pdf"
     Cache-Control = "public, max-age=31536000"
+    X-Frame-Options = "SAMEORIGIN"
+
+# Allow iframe embedding for resume page
+[[headers]]
+  for = "/resume"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
 
 # Compress text files
 [[headers]]
