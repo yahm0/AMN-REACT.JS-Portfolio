@@ -7,26 +7,37 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink
+            to='/'
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
             About Me
           </NavLink>
         </li>
         <li>
-          <NavLink to='/portfolio' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink
+            to='/portfolio'
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
             Portfolio
           </NavLink>
         </li>
         <li>
-          <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink
+            to='/contact'
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
             Contact
           </NavLink>
         </li>
         <li>
-          <NavLink to='/resume' className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink
+            to='/resume'
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
             Resume
           </NavLink>
         </li>
-
       </ul>
     </nav>
   );

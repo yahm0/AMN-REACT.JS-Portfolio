@@ -1,18 +1,19 @@
 .button {
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    background-color: #2d5f8b;
-    color: #ffffff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #2d5f8b;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 .button:hover {
-    background-color: rgba(16, 120, 150, 0.25);
-    transform: scale(1.02);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: rgba(16, 120, 150, 0.25);
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }

@@ -6,52 +6,56 @@ import '../styles/Portfolio.css';
 const projects = [
   {
     title: 'Atlas Ingest',
-    image: '', // No image for this project
+    image: '', // Document processing and data pipeline
     repoLink: 'https://github.com/yahm0/Atlas-Ingest',
-    description: 'Production-grade, serverless financial document ingestion and AI processing pipeline. End-to-end system that automatically acquires, validates, processes, and transforms financial documents (SEC filings, 10-Ks, 10-Qs, 8-Ks) into structured, searchable knowledge using AWS AI services and modern cloud architecture.'
+    description:
+      'Production-grade, serverless financial document ingestion and AI processing pipeline. End-to-end system that automatically acquires, validates, processes, and transforms financial documents (SEC filings, 10-Ks, 10-Qs, 8-Ks) into structured, searchable knowledge using AWS AI services and modern cloud architecture.',
   },
   {
     title: 'Lyra Insight',
-    image: '', // No image for this project
+    image: '', // AI and machine learning
     repoLink: 'https://github.com/yahm0/Lyra-Insight',
-    description: 'RAG + Custom Models (AI Agent & Analytics)'
+    description:
+      'Advanced RAG (Retrieval-Augmented Generation) system with custom fine-tuned models for AI agent development and business analytics. Features Hugging Face integrations, vector embeddings, and intelligent document processing for enhanced decision-making and automated insights.',
   },
   {
     title: 'Quant Analytics Notebook',
-    image: '', // No image for this project
+    image:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center', // Analytics pipeline image fits well for quantitative analysis
     repoLink: 'https://github.com/yahm0/Quant-Analytics-Notebook',
-    description: 'Risk & Backtesting'
+    description:
+      'Comprehensive quantitative analysis platform for financial risk modeling, backtesting strategies, and portfolio optimization. Implements Monte Carlo simulations, time series analysis, and statistical modeling for data-driven investment decisions.',
   },
   {
     title: 'Terminal Softwares Website',
-    image: '/assets/imgs/GPA Home.jpg', // Using GPA Home image as placeholder for software company website
+    image: '/assets/imgs/TSWebsite.png', // Terminal Software website image
     repoLink: 'https://github.com/Terminal-Software/react-website',
-    description: 'Professional website for Terminal Software, showcasing software development services and company information.'
+    description:
+      'Professional website for Terminal Software, showcasing software development services and company information.',
   },
   {
     title: 'Book Search Engine and Manager',
     image: '/assets/imgs/books.jpg', // Books image is perfect for this project
     repoLink: 'https://github.com/yahm0/Book-Search-Engine-And-Manager',
-    description: 'Full-stack web application for searching and managing books, featuring Google Books API integration and user authentication.'
+    description:
+      'Full-stack web application for searching and managing books, featuring Google Books API integration and user authentication.',
   },
   {
     title: 'Infrastructure as Code Example',
     image: '/assets/imgs/iac_thumbnail.png', // IAC thumbnail is perfect for this project
     repoLink: 'https://github.com/yahm0/Infrastructure-as-Code-Example',
-    description: 'Demonstration of Infrastructure as Code principles using AWS CDK and CloudFormation for automated infrastructure deployment.'
+    description:
+      'Demonstration of Infrastructure as Code principles using AWS CDK and CloudFormation for automated infrastructure deployment.',
   },
-  {
-    title: 'Analytics Pipeline Showcase',
-    image: '/assets/imgs/analytics_pipeline.png', // Analytics pipeline image is perfect for this project
-    repoLink: 'https://github.com/yahm0/Analytics-Pipeline-Showcase',
-    description: 'End-to-end data analytics pipeline implementation showcasing data ingestion, processing, and visualization workflows.'
-  },
+
   {
     title: 'Machine Learning with SageMaker',
-    image: '/assets/imgs/sagemaker_demo.png', // SageMaker image is perfect for this project
+    image:
+      'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center', // AI and machine learning
     repoLink: 'https://github.com/yahm0/Machine-Learning-with-SageMaker',
-    description: 'Machine learning project demonstrating model development, training, and deployment using Amazon SageMaker services.'
-  }
+    description:
+      'Machine learning project demonstrating model development, training, and deployment using Amazon SageMaker services.',
+  },
 ];
 
 function Portfolio() {

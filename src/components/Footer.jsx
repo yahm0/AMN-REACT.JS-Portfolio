@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
-import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'; // Importing icons
+import { FaGithub, FaLinkedin /*, FaStackOverflow*/ } from 'react-icons/fa'; // Importing icons
 
 function Footer() {
   return (
@@ -15,12 +15,12 @@ function Footer() {
         >
           <FaLinkedin />
         </a>
-        <a
+        {/* <a
           href='https://stackoverflow.com/users/25155278/yahmo'
           aria-label='Stack Overflow'
         >
           <FaStackOverflow />
-        </a>
+        </a> */}
       </div>
       <p>&copy; 2025 Adam Nuccio</p>
     </footer>

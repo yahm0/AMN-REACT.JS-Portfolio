@@ -38,9 +38,7 @@
   width: 120%;
   height: 2px;
   background-color: #6ccff6;
-  transition:
-    width 0.3s ease,
-    left 0.3s ease;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .contact h2:hover::after {
@@ -221,7 +219,6 @@
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-
   .wk-desk-7,
   .wk-desk-5 {
     flex-basis: 100%;
@@ -237,7 +234,7 @@
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .contact_us_green {
     padding-top: 3rem;
     margin-top: 1.5rem;
@@ -259,7 +256,7 @@
     width: 20px;
     height: 20px;
   }
-  
+
   .contact_us_green {
     padding-top: 2.5rem;
     margin-top: 1rem;
