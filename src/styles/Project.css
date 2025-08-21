@@ -91,6 +91,22 @@
   /* Expands the lavender line width on hover */
 }
 
+/* Project description styling */
+.project-description {
+  font-size: 0.95rem;
+  /* Slightly smaller font size for description text */
+  color: #555;
+  /* Medium gray color for description text */
+  margin-bottom: 1.5rem;
+  /* More margin below the description */
+  line-height: 1.5;
+  /* Better line spacing for readability */
+  font-style: italic;
+  /* Italic style to distinguish from other text */
+  padding: 0 0.5rem;
+  /* Horizontal padding for better text flow */
+}
+
 /* Paragraph (p) styling inside the project container */
 .project p {
   font-size: 1rem;

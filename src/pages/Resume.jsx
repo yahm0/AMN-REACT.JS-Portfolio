@@ -7,14 +7,14 @@ function Resume() {
             <h2>Resume</h2>
             <div className='pdf-viewer'>
                 <iframe
-                    src='assets/resume/AMNResume2025-1.pdf'
+                    src='assets/resume/Adam_Nuccio_Resume_MLE_2026.pdf'
                     width='100%'
                     height='1000px'
                     title='Resume PDF'
                 ></iframe>
             </div>
             <a
-                href='assets/resume/AMNResume2025-1.pdf'
+                href='assets/resume/Adam_Nuccio_Resume_MLE_2026.pdf'
                 download
                 className='resume-download'
             >

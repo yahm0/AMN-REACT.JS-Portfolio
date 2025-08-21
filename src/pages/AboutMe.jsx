@@ -10,61 +10,47 @@ function AboutMe() {
         <div className='bio-container'>
           <section className='about-me-header'>
             <img
-              src='/assets/imgs/profilepicture.jpg'
+              src='/assets/imgs/AMNHS.jpg'
               alt='Developer'
               className='profile-picture w-32 h-32 md:w-48 md:h-48 object-cover rounded-full'
             />
           </section>
           <section className='about-me-card'>
             <div className="container">
-              <h2 className="text-xl font-bold mb-4">Adam Nuccio: A Career of Technical Excellence and Leadership</h2>
+              <h2 className="text-xl font-bold mb-4">Adam Nuccio: A Career of Technical Mastery, Leadership, and Innovation</h2>
 
-              <p>Starting with enterprise network support, Adam has built a career driving innovation and growth in IT.</p>
+              <p>Adam Nuccio's career reflects a rare combination of technical expertise, strategic leadership, and creative innovation. Starting in enterprise IT and evolving into cloud consulting, applied machine learning, and interactive media, Adam has consistently delivered scalable solutions that bridge technology and business strategy.</p>
 
               <div className="section">
-                <p>At ITS Group (2021 - 2022), supporting enterprise infrastructure as a Network Specialist, Adam served at this Managed Service Provider (MSP). There, he managed over 1,300 workstations and 300 servers across multiple clients, gaining deep expertise in VPN configurations, security standards, and server maintenance. His work in infrastructure security and network optimization ensured operational continuity for a wide range of businesses.</p>
+                <p>Adam began his career supporting enterprise infrastructure at ITS Group, managing over 1,300 workstations and 300 servers across multiple clients. He advanced as a Network Engineer at Infotect Design Solutions, where he implemented firewalls, intrusion detection, and automated vulnerability scans, strengthening client environments and establishing himself as a rising technical leader.</p>
               </div>
 
               <div className="section">
-                <p>As a Network Engineer at Infotect Design Solutions (2022), strengthening IT security and infrastructure, Adam played a key role in designing and securing network infrastructures. He:</p>
-                <ul>
-                  <li>Developed and installed network solutions.</li>
-                  <li>Implemented firewalls and data security measures.</li>
-                  <li>Optimized network performance for clients.</li>
-                </ul>
-                <p>His ability to bridge technical expertise with strategic planning made him a valuable asset in improving IT reliability and security.</p>
+                <p>As Director of Information Technology at Stan Weaver & Company, Adam managed a $1M+ IT budget and led a six-person team through a major post-merger modernization effort. He unified Microsoft 365 tenants, built two on-premises data centers, integrated Azure into a hybrid model, and transformed ERP data into queryable pipelines that reduced query times by 60% and improved business intelligence by 40%. He also established cybersecurity frameworks, observability systems, and a KPI-driven help desk, boosting both uptime and user satisfaction.</p>
               </div>
 
               <div className="section">
-                <p>At Stan Weaver & Company (2022 - 2024), leading IT transformations as Director of Information Technology, Adam's leadership capabilities became fully realized. Tasked with integrating Cors-Air's IT infrastructure post-merger, he modernized the company's systems, increasing workflow efficiency by 20% and improving operational uptime.</p>
-
-                <p>He spearheaded key initiatives, including:</p>
-                <ul>
-                  <li>Migrating and consolidating Microsoft 365 tenants, optimizing collaboration across the organization.</li>
-                  <li>Establishing a shared hybrid cloud domain, enhancing accessibility and system compatibility.</li>
-                  <li>Implementing machine learning-driven business intelligence in Power BI, improving decision-making efficiency by 40%.</li>
-                  <li>Developing a help desk with comprehensive KPIs, improving IT support responsiveness and reducing downtime.</li>
-                  <li>Creating ELK stack monitoring systems to improve system observability and proactive issue resolution.</li>
-                  <li>Enhancing cybersecurity posture through phishing awareness programs, disaster recovery plans, and Azure Active Directory security frameworks.</li>
-                  <li>Overseeing two small data center implementations, optimizing cooling, power, and server management.</li>
-                </ul>
-
-                <p>His leadership extended beyond technical excellence—he mentored a six-person IT team, fostering professional growth while executing high-impact infrastructure projects.</p>
+                <p>In 2024, Adam founded Green Pipe Analytics, a consultancy focused on cloud-native architectures and AI-powered business transformation. He has delivered custom GPT pipelines for forecasting and customer engagement, built MERN + GraphQL platforms with analytics dashboards, and integrated omnichannel retail systems spanning CRM, ERP, and POS. His work has cut client infrastructure costs by up to 30% while enabling data-driven automation across industries.</p>
               </div>
 
               <div className="section">
-                <p>At Green Pipe Analytics (2024 - Present), pioneering retail technology as Founder and Principal Consultant, Adam specializes in vertically integrating retail operations through custom AI architectures and cloud solutions. The firm focuses on transforming traditional retail businesses into data-driven, automated enterprises.</p>
+                <p>At the same time, Adam founded Terminal Software, an indie game studio where he directs both technical development and business strategy. As a computer graphics programmer, he designs innovative mechanics and rendering pipelines in Unity, while leading a cross-functional team using Agile methodologies. His leadership extends to financial planning, marketing, and community building, proving his ability to combine engineering rigor with creative storytelling.</p>
+              </div>
 
-                <p>Key specializations include:</p>
-                <ul>
-                  <li>Retail AI Solutions: Developing custom GPT architectures for inventory forecasting, customer service automation, and personalized shopping experiences.</li>
-                  <li>Vertical Integration Platform: Creating unified cloud systems that connect all aspects of retail operations - from supply chain and inventory management to point-of-sale and customer relationship management.</li>
-                  <li>Retail Analytics Suite: Implementing real-time business intelligence dashboards for sales analytics, customer behavior tracking, and inventory optimization.</li>
-                  <li>Omnichannel Integration: Building seamless connections between e-commerce platforms, physical stores, and warehouse management systems.</li>
-                  <li>Supply Chain Optimization: Deploying AI-driven demand forecasting and automated procurement systems to streamline operations.</li>
-                </ul>
+              <div className="section">
+                <p>Most recently, Adam served as a Cloud Consultant Intern at AWS ProServe, where he built a production-scale document intelligence pipeline using Textract, Comprehend, Bedrock, and DynamoDB. His work improved compliance answer speeds by 80% and query performance by 30%, while applying Monte Carlo simulations, serverless architecture, and secure workflows to deliver resilient, scalable solutions.</p>
+              </div>
 
-                <p>Today, Adam Nuccio remains dedicated to bridging the gap between technology and business strategy. With a strong foundation in IT infrastructure, Data Analytics, and cloud solutions, he continues to transform organizations by leveraging innovative technologies that drive efficiency and competitive advantage.</p>
+              <div className="section">
+                <p>Alongside professional roles, Adam has developed independent projects such as Atlas Ingest, a serverless data ingestion platform, Lyra Insight, a RAG + custom model pipeline with Hugging Face integrations, and a Quant Analytics Notebook for financial risk modeling and backtesting. These projects highlight his interests in stochastic processes, optimization, time series analysis, and applied ML engineering.</p>
+              </div>
+
+              <div className="section">
+                <p>Currently pursuing a B.S. in Computational & Applied Mathematics (4.0 GPA) at the University of South Florida, Adam complements his professional experience with academic rigor. He holds certifications in AWS (ML Specialty, Solutions Architect), Azure (Data Engineer, AI Engineer), and ISC², reinforcing his cross-domain expertise.</p>
+              </div>
+
+              <div className="section">
+                <p>Today, Adam Nuccio stands out as a cloud consultant, data engineer, applied ML specialist, and founder with a proven record of IT senior leadership. From directing multimillion-dollar budgets and leading teams through high-stakes infrastructure transformations to launching entrepreneurial ventures in AI consulting and interactive media, Adam has consistently demonstrated the ability to scale technology, mentor talent, and align technical execution with strategic goals. He remains committed to leveraging his breadth of experience to drive efficiency, innovation, and competitive advantage at the highest levels of technology leadership.</p>
               </div>
             </div>
 
@@ -113,28 +99,27 @@ function AboutMe() {
           <h3>Disciplines</h3>
           <div className='grid-layout'>
             <div className='discipline'>
-              <h4>IT Management</h4>
-              <p>
-                Skilled in managing IT operations and teams for optimal
-                performance.
-              </p>
-            </div>
-            <div className='discipline'>
-              <h4>Data Analytics</h4>
-              <p>
-                Proficient in analyzing data and providing actionable insights.
-              </p>
-            </div>
-            <div className='discipline'>
-              <h4>Data Engineering</h4>
-              <p>
-                Expertise in building and maintaining data pipelines, warehouses, and infrastructure to enable efficient data processing and analysis.
-              </p>
-            </div>
-            <div className='discipline'>
               <h4>Machine Learning Engineering</h4>
               <p>
-                Ready to develop, deploy, and optimize machine learning models to automate tasks and improve predictions.
+                Expertise in developing, deploying, and optimizing machine learning models to automate tasks and improve predictions.
+              </p>
+            </div>
+            <div className='discipline'>
+              <h4>Full Stack Web Developer</h4>
+              <p>
+                Proficient in building complete web applications from frontend to backend, using modern technologies and best practices.
+              </p>
+            </div>
+            <div className='discipline'>
+              <h4>IT Management</h4>
+              <p>
+                Skilled in managing IT operations and teams for optimal performance and strategic technology planning.
+              </p>
+            </div>
+            <div className='discipline'>
+              <h4>Cloud Architecture</h4>
+              <p>
+                Experience designing and implementing scalable cloud solutions using AWS services and modern cloud-native practices.
               </p>
             </div>
           </div>
