@@ -112,6 +112,8 @@
 
 .contact_us_green {
   padding: 2rem 1rem;
+  padding-top: 4rem;
+  margin-top: 2rem;
   background-color: #f8f9fa;
 }
 
@@ -125,6 +127,7 @@
 .responsive-container-block.container {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 1rem;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -163,6 +166,7 @@
 .text-content {
   text-align: center;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 .text-blk {
@@ -217,6 +221,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+
   .wk-desk-7,
   .wk-desk-5 {
     flex-basis: 100%;
@@ -231,6 +236,11 @@
   .responsive-container-block.container {
     flex-direction: column;
     gap: 2rem;
+  }
+  
+  .contact_us_green {
+    padding-top: 3rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -248,5 +258,10 @@
   .social-svg {
     width: 20px;
     height: 20px;
+  }
+  
+  .contact_us_green {
+    padding-top: 2.5rem;
+    margin-top: 1rem;
   }
 }
