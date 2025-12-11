@@ -183,21 +183,119 @@
 
 /* Responsive styling for medium-sized screens */
 @media (max-width: 768px) {
+  .project {
+    min-height: 350px;
+    padding: 1.25rem;
+  }
+
   .project h3 {
-    font-size: 1.3rem;
-    /* Slightly smaller font size for titles on medium screens */
+    font-size: clamp(1.1rem, 2.5vw + 0.3rem, 1.3rem);
   }
 
   .project p {
-    font-size: 0.9rem;
-    /* Slightly smaller font size for paragraphs on medium screens */
+    font-size: clamp(0.85rem, 2vw + 0.15rem, 0.9rem);
+  }
+
+  .project-description {
+    font-size: clamp(0.85rem, 2vw + 0.1rem, 0.9rem);
   }
 
   .project a {
-    padding: 0.4rem 0.8rem;
-    /* Adjusted padding for links on medium screens */
-    font-size: 0.9rem;
-    /* Slightly smaller font size for links on medium screens */
+    padding: 0.5rem 0.8rem;
+    font-size: clamp(0.85rem, 2vw + 0.1rem, 0.9rem);
     margin-right: 0.4rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project img {
+    max-height: 180px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Landscape mobile breakpoint */
+  .project {
+    min-height: 320px;
+    padding: 1rem;
+  }
+
+  .project h3 {
+    font-size: clamp(1rem, 2.5vw + 0.25rem, 1.2rem);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .project p {
+    font-size: clamp(0.8rem, 2vw + 0.1rem, 0.88rem);
+  }
+
+  .project-description {
+    font-size: clamp(0.8rem, 2vw + 0.1rem, 0.85rem);
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .project a {
+    padding: 0.5rem 0.75rem;
+    font-size: clamp(0.8rem, 2vw + 0.1rem, 0.85rem);
+    min-height: 44px;
+  }
+
+  .project img {
+    max-height: 160px;
+  }
+
+  .project-links {
+    padding-top: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    min-height: 300px;
+    padding: 0.875rem;
+    border-radius: 10px;
+  }
+
+  .project h3 {
+    font-size: clamp(0.95rem, 2.5vw + 0.2rem, 1.1rem);
+    margin-bottom: 0.875rem;
+  }
+
+  .project p {
+    font-size: clamp(0.78rem, 2vw + 0.1rem, 0.85rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .project-description {
+    font-size: clamp(0.78rem, 2vw + 0.1rem, 0.82rem);
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .project a {
+    padding: 0.5rem 0.7rem;
+    font-size: clamp(0.78rem, 2vw + 0.1rem, 0.82rem);
+    margin-right: 0.3rem;
+    margin-top: 0.4rem;
+    min-height: 44px;
+  }
+
+  .project img {
+    max-height: 140px;
+    margin-bottom: 0.875rem;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .project-links {
+    padding-top: 0.5rem;
+  }
+
+  .project:hover {
+    transform: scale(1.01);
   }
 }

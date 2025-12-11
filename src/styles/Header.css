@@ -19,7 +19,7 @@
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
   letter-spacing: 0.04em;
-  font-size: 2.5rem;
+  font-size: clamp(1.4rem, 4vw + 0.5rem, 2.5rem);
   color: #2d5f8b;
   transition: color 0.3s ease;
   margin: 0;
@@ -115,8 +115,7 @@ body,
   }
 
   .header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   nav {
@@ -126,31 +125,51 @@ body,
   nav ul {
     justify-content: center;
     flex-direction: row;
-    /* Ensure navbar stays horizontal */
     flex-wrap: wrap;
     gap: 1rem;
   }
 
   nav ul li a {
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 2vw + 0.3rem, 1.1rem);
+  }
+}
+
+@media (max-width: 640px) {
+  /* Landscape mobile breakpoint */
+  .header {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  .header h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul {
+    gap: 0.75rem;
+  }
+
+  nav ul li a {
+    font-size: clamp(0.9rem, 2.5vw + 0.2rem, 1rem);
+    padding: 0.5rem 0.75rem;
   }
 }
 
 @media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.5rem;
+  .header {
+    padding: 0.5rem;
   }
 
   nav ul {
     justify-content: center;
     flex-direction: row;
-    /* Keep horizontal on smaller screens */
     flex-wrap: wrap;
     gap: 0.5rem;
   }
 
   nav ul li a {
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 2vw + 0.2rem, 1rem);
+    padding: 0.4rem 0.6rem;
   }
 
   nav {
