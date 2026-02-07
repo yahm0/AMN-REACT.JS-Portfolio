@@ -32,12 +32,37 @@ function AboutMe() {
 
             <h4>Infrastructure &amp; Operations</h4>
             <p>
-              As Director of IT at Stan Weaver &amp; Company, Adam managed a
-              $1M+ budget and a six-person team. He unified 200+ users across a
-              hybrid domain post-merger and built two on-premises data centers.
-              These initiatives improved system uptime by 15% and reduced ERP
-              query times by 60%. He also implemented an automated help desk
-              system that increased user satisfaction by 50%.
+              As Director of IT at Stan Weaver &amp; Company, Adam led a $1M+
+              budget and directed the Cors-Air to Stan Weaver merger
+              integration, migrating 200+ users into a shared hybrid domain,
+              unifying Microsoft 365 email, and standardizing DNS and group
+              policies -- boosting operational efficiency by 20%. He built two
+              on-premises data centers and integrated Azure hybrid cloud,
+              migrating the RDS Farm with DUO authentication, which improved
+              uptime by 15% and reduced operational costs by 20%.
+            </p>
+            <p>
+              Adam transformed ERP data into queryable datasets and built Power
+              BI and ML pipelines that reduced query times by 60% and increased
+              BI output by 40%. He deployed HubSpot CRM and a help desk system
+              with KPIs, CSAT surveys, a knowledge base, and automated
+              workflows, improving user satisfaction by 50%. He implemented an
+              ELK observability stack, phishing-awareness campaigns, Intune
+              device management, and Azure AD RBAC, reducing downtime risks by
+              25%. He also adopted ManageEngine as an RMM platform to patch,
+              monitor, and audit 150+ workstations and 20+ servers across
+              Florida, and migrated legacy PBX to RingCentral cloud VoIP to cut
+              telephony costs across all locations.
+            </p>
+            <p>
+              Prior to Stan Weaver, Adam designed and maintained network
+              infrastructure as a Network Engineer at Infotect Design Solutions,
+              implementing firewalls and backup systems to protect client data.
+              At ITS Group, he resolved Tier 1 and Tier 2 help desk tickets,
+              deployed Kaseya RMM across 300+ servers and 1,300+ workstations,
+              staged and configured 100+ PCs with structured cabling and VoIP
+              drops, and deployed Proofpoint email security alongside
+              on-premises PBX, VoIP, and Microsoft Exchange environments.
             </p>
 
             <h4>Cloud Engineering &amp; Consulting</h4>
