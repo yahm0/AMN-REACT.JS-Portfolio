@@ -58,8 +58,8 @@ function AboutMe() {
               validated resilience and cost with Monte Carlo simulations on
               volume, Lambda duration, SQS latency, and error rates. He also
               built an analytics UI with React.js and Three.js, architected a
-              DynamoDB data lake with Athena querying at 99.99% availability
-              and 30% faster query times, and automated GDPR rights workflows,
+              DynamoDB data lake with Athena querying at 99.99% availability and
+              30% faster query times, and automated GDPR rights workflows,
               secure data export, WAF protections, and Cognito identity with
               infrastructure defined in CloudFormation.
             </p>
