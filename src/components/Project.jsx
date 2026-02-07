@@ -9,9 +9,16 @@ function Project({ title, image, deployedLink, repoLink, description }) {
       <h3>{title}</h3> {/* Ensure title is only rendered once */}
       {description && <p className='project-description'>{description}</p>}
       <div className='project-links'>
-        <a href={repoLink} target='_blank' rel='noopener noreferrer'>
-          View Repository
-        </a>
+        {deployedLink && (
+          <a href={deployedLink} target='_blank' rel='noopener noreferrer'>
+            View Site
+          </a>
+        )}
+        {repoLink && (
+          <a href={repoLink} target='_blank' rel='noopener noreferrer'>
+            View Repository
+          </a>
+        )}
       </div>
     </div>
   );

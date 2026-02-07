@@ -22,7 +22,7 @@ function Footer() {
           <FaStackOverflow />
         </a> */}
       </div>
-      <p>&copy; 2025 Adam Nuccio</p>
+      <p>&copy; 2026 Adam Nuccio</p>
     </footer>
   );
 }

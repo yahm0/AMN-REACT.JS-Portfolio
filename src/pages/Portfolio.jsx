@@ -27,9 +27,9 @@ const projects = [
       'Comprehensive quantitative analysis platform for financial risk modeling, backtesting strategies, and portfolio optimization. Implements Monte Carlo simulations, time series analysis, and statistical modeling for data-driven investment decisions.',
   },
   {
-    title: 'Terminal Softwares Website',
+    title: 'Terminal Softwares Webapp',
     image: '/assets/imgs/TSWebsite.png', // Terminal Software website image
-    repoLink: 'https://github.com/Terminal-Software/react-website',
+    deployedLink: 'https://terminalsoftware.gg',
     description:
       'Professional website for Terminal Software, showcasing software development services and company information.',
   },
@@ -67,6 +67,7 @@ function Portfolio() {
           key={index} // Unique key for each Project component
           title={project.title} // Project title
           image={project.image} // Project image
+          deployedLink={project.deployedLink} // Link to deployed site
           repoLink={project.repoLink} // Link to project's GitHub repository
           description={project.description} // Project description (optional)
         />

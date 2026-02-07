@@ -23,9 +23,9 @@ function AboutMe() {
             <p>
               Adam Nuccio integrates mathematical rigor with executive IT
               leadership to build scalable, data-driven systems. He is currently
-              pursuing a degree in Mathematics: Computational and Applied
-              (Concentration: Discrete Math &amp; Cryptography) at the
-              University of South Florida.
+              pursuing a degree in Mathematics: Computational and Applied at the
+              University of South Florida, concentrating in Discrete Math and
+              Cryptography.
             </p>
 
             <h3>Executive Impact</h3>
@@ -48,6 +48,21 @@ function AboutMe() {
               query latency by 65 ms and maintained 99.9% uptime for
               multi-tenant hosting environments.
             </p>
+            <p>
+              As a Cloud Consultant Intern on the AWS ProServe Data and ML
+              Specialty team, Adam delivered 80% faster safety-compliance
+              answers via hybrid retrieval and cross-encoder reranking on a
+              fully serverless stack. He built a document-intelligence pipeline
+              using Textract, Comprehend, and Bedrock Agents covering OCR, NER,
+              PII detection, summarization, and RAG over NIOSH data. He
+              validated resilience and cost with Monte Carlo simulations on
+              volume, Lambda duration, SQS latency, and error rates. He also
+              built an analytics UI with React.js and Three.js, architected a
+              DynamoDB data lake with Athena querying at 99.99% availability
+              and 30% faster query times, and automated GDPR rights workflows,
+              secure data export, WAF protections, and Cognito identity with
+              infrastructure defined in CloudFormation.
+            </p>
 
             <h3>Technical Foundation</h3>
             <p>
@@ -58,6 +73,34 @@ function AboutMe() {
               cryptography to engineer secure, resilient data pipelines.
             </p>
           </section>
+        </div>
+
+        {/* Disciplines Section */}
+        <div className='disciplines-container'>
+          <h3>Disciplines</h3>
+          <div className='grid-layout'>
+            <div className='discipline'>
+              <h4>Cloud Architecture</h4>
+              <p>
+                Designing and deploying scalable cloud-native solutions across
+                AWS and Azure, from hybrid infrastructure to microservices.
+              </p>
+            </div>
+            <div className='discipline'>
+              <h4>Data Engineering</h4>
+              <p>
+                Building ETL pipelines, optimizing query performance, and
+                transforming raw data into actionable business intelligence.
+              </p>
+            </div>
+            <div className='discipline'>
+              <h4>Applied Mathematics</h4>
+              <p>
+                Applying discrete math, cryptography, and stochastic processes
+                to solve complex engineering and security problems.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
