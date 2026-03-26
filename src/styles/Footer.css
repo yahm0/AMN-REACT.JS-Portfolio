@@ -45,6 +45,11 @@
   color: #000000;
 }
 
+.footer-updated {
+  font-size: 0.8rem;
+  color: #888888;
+}
+
 .footer a {
   color: #107896;
   text-decoration: none;

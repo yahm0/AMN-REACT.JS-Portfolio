@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
-import { FaGithub, FaLinkedin /*, FaStackOverflow*/ } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
@@ -21,12 +21,6 @@ function Header() {
           >
             <FaLinkedin />
           </a>
-          {/* <a
-            href='https://stackoverflow.com/users/25155278/yahmo'
-            aria-label='Stack Overflow'
-          >
-            <FaStackOverflow />
-          </a> */}
         </div>
       </div>
       <div className='nav-container'>

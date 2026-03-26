@@ -22,14 +22,7 @@ function Navigation() {
             Portfolio
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink
-            to='/contact'
-            className={({ isActive }) => (isActive ? 'active' : undefined)}
-          >
-            Contact
-          </NavLink>
-        </li> */}
+
         <li>
           <NavLink
             to='/resume'

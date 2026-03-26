@@ -47,8 +47,8 @@ function TestimonialsSlider() {
     <div className='testimonials-slider'>
       <h2>Testimonials</h2>
       <Slider {...settings}>
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className='testimonial'>
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.name} className='testimonial'>
             <p>"{testimonial.quote}"</p> {/* Display the testimonial quote */}
             <h4>- {testimonial.name}</h4>{' '}
             {/* Display the name of the person giving the testimonial */}

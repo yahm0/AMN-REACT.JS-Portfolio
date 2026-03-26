@@ -4,9 +4,8 @@ import '../styles/Project.css';
 function Project({ title, image, deployedLink, repoLink, description }) {
   return (
     <div className='project'>
-      {image && <img src={image} alt={title} />}{' '}
-      {/* Render image only if provided */}
-      <h3>{title}</h3> {/* Ensure title is only rendered once */}
+      {image && <img src={image} alt={title} />}
+      <h3>{title}</h3>
       {description && <p className='project-description'>{description}</p>}
       <div className='project-links'>
         {deployedLink && (
@@ -24,4 +23,4 @@ function Project({ title, image, deployedLink, repoLink, description }) {
   );
 }
 
-export default Project;
+export default React.memo(Project);

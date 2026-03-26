@@ -1,28 +1,17 @@
 /* Project container styling */
 .project {
-  padding: 1.5rem;
-  /* Increased padding inside the project container */
+  padding: 1rem 1.25rem;
   margin: 0;
-  /* No margin around the project container */
   text-align: center;
-  /* Center-align text inside the project container */
   background-color: #ffffff;
-  /* White background color for the project container */
-  border-radius: 12px;
-  /* Increased rounded corners for modern look */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  /* Enhanced shadow for better depth */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-  /* Smooth transition for hover effects */
   font-family: 'Merriweather', serif;
-  /* Serif font family for text inside the project container */
   border: 1px solid #f0f0f0;
-  /* Subtle border for definition */
   display: flex;
   flex-direction: column;
-  /* Use flexbox to arrange content vertically */
-  min-height: 400px;
-  /* Set minimum height for consistency */
+  min-height: 200px;
 }
 
 /* Image styling inside the project container */
@@ -52,17 +41,11 @@
 /* Title (h3) styling inside the project container */
 .project h3 {
   color: #2c2c2c;
-  /* Dark gray color for the title text */
-  font-size: 1.6rem;
-  /* Slightly increased font size for the title */
-  margin-bottom: 1.25rem;
-  /* Increased margin below the title */
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
   position: relative;
-  /* Relative positioning for pseudo-element placement */
-  padding-bottom: 0.75rem;
-  /* Increased padding at the bottom of the title for space between text and the lavender line */
+  padding-bottom: 0.5rem;
   font-weight: 600;
-  /* Added font weight for better emphasis */
 }
 
 .project h3:hover {
@@ -101,18 +84,12 @@
 
 /* Project description styling */
 .project-description {
-  font-size: 0.95rem;
-  /* Slightly smaller font size for description text */
+  font-size: 0.88rem;
   color: #555;
-  /* Medium gray color for description text */
-  margin-bottom: 2rem;
-  /* Increased margin below the description */
-  line-height: 1.6;
-  /* Better line spacing for readability */
+  margin-bottom: 1rem;
+  line-height: 1.5;
   font-style: italic;
-  /* Italic style to distinguish from other text */
-  padding: 0 0.75rem;
-  /* Increased horizontal padding for better text flow */
+  padding: 0 0.25rem;
 }
 
 /* Paragraph (p) styling inside the project container */

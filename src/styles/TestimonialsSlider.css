@@ -65,9 +65,8 @@
   font-style: italic;
   color: #2c2c2c;
   font-family: 'Merriweather', serif;
+  font-size: 0.9rem;
   letter-spacing: 0.02em;
-  transform: scale(0.85);
-  /* Scale down the quote size by 15% */
 }
 
 .testimonial h4 {

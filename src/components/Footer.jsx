@@ -3,6 +3,11 @@ import '../styles/Footer.css';
 import { FaGithub, FaLinkedin /*, FaStackOverflow*/ } from 'react-icons/fa'; // Importing icons
 
 function Footer() {
+  const lastUpdated = new Date().toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric',
+  });
+
   return (
     <footer className='footer'>
       <div className='footer-icons'>
@@ -15,14 +20,9 @@ function Footer() {
         >
           <FaLinkedin />
         </a>
-        {/* <a
-          href='https://stackoverflow.com/users/25155278/yahmo'
-          aria-label='Stack Overflow'
-        >
-          <FaStackOverflow />
-        </a> */}
       </div>
       <p>&copy; 2026 Adam Nuccio</p>
+      <p className='footer-updated'>Last updated: {lastUpdated}</p>
     </footer>
   );
 }
