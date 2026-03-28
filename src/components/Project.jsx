@@ -4,7 +4,7 @@ import '../styles/Project.css';
 function Project({ title, image, deployedLink, repoLink, description }) {
   return (
     <div className='project'>
-      {image && <img src={image} alt={title} />}
+      {image && <img src={image} alt={title} loading='lazy' />}
       <h3>{title}</h3>
       {description && <p className='project-description'>{description}</p>}
       <div className='project-links'>

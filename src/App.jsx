@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AboutMe from './pages/AboutMe';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
 import './styles/App.css';
+
+const AboutMe = lazy(() => import('./pages/AboutMe'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Resume = lazy(() => import('./pages/Resume'));
 
 const App = () => {
   return (
@@ -22,11 +23,13 @@ const App = () => {
         <Header />
 
         <main>
-          <Routes>
-            <Route path='/' element={<AboutMe />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/resume' element={<Resume />} />
-          </Routes>
+          <Suspense fallback={<div className='loading'>Loading...</div>}>
+            <Routes>
+              <Route path='/' element={<AboutMe />} />
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/resume' element={<Resume />} />
+            </Routes>
+          </Suspense>
         </main>
 
         <Footer />

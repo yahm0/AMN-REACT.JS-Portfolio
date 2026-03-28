@@ -1,216 +1,124 @@
-# Adam Nuccio's React.js Portfolio
+# Adam Nuccio's React Portfolio
 
-A modern, responsive portfolio website built with React.js showcasing Adam Nuccio's technical expertise in Machine Learning Engineering, Cloud Architecture, Full Stack Development, and IT Management. Features an interactive design with project showcases, professional bio, contact functionality, and downloadable resume.
+A responsive, performance-optimized portfolio site built with React 18 and deployed on Netlify at [adamnuccio.com](https://adamnuccio.com). Showcases cloud engineering, data engineering, and applied mathematics work.
 
-## Table of Contents
+## Tech Stack
 
-1. [Features](#1-features)
-2. [Technologies Used](#2-technologies-used)
-3. [Installation](#3-installation)
-4. [Usage](#4-usage)
-5. [Project Structure](#5-project-structure)
-6. [Deployment](#6-deployment)
-7. [Contributing](#7-contributing)
-8. [Issues](#8-issues)
-9. [License](#9-license)
-10. [Acknowledgements](#10-acknowledgements)
-11. [Environment Variables](#11-environment-variables)
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| **Framework** | React 18.2 | Component-based UI with hooks |
+| **Routing** | React Router DOM 6.10 | Client-side SPA navigation |
+| **Icons** | React Icons 5.2 | SVG icon library (GitHub, LinkedIn) |
+| **Fonts** | Google Fonts (Lato, Montserrat, Merriweather) | Typography system |
+| **Build** | Create React App (react-scripts 5.0) | Webpack bundling, Babel transpilation, dev server |
+| **Linting** | ESLint 8 + Prettier 2.8 | Code quality enforcement via pre-commit hooks (Husky + lint-staged) |
+| **Performance** | Web Vitals 3.0 | Core Web Vitals monitoring |
+| **Hosting** | Netlify | CI/CD auto-deploy from `main`, CDN, security headers |
+| **Optimization** | Claude Code (Opus 4.6) | Mathematical optimization analysis (LP, KKT, Pareto) for bundle and asset allocation |
 
-## 1. Features
+## Performance Optimization
 
-- **About Me Section**: Professional bio highlighting career achievements, profile picture, and technical disciplines (Machine Learning Engineering, Full Stack Development, IT Management, Cloud Architecture)
-- **Portfolio Section**: Showcase of key projects including Atlas Ingest, Lyra Insight, Quant Analytics Notebook, and other technical implementations with GitHub repository links
-- **Contact Section**: Functional contact form powered by EmailJS with phone, email, and location information
-- **Resume Section**: Downloadable PDF resume (`Adam_Nuccio_Resume_MLE_2026.pdf`) with embedded viewer
-- **Responsive Design**: Mobile-first design that works seamlessly across all device sizes
-- **Social Media Integration**: GitHub and LinkedIn profile links in header and footer
-- **Modern UI/UX**: Clean, professional design with hover effects and smooth transitions
+This codebase was analyzed and optimized using mathematical optimization techniques grounded in real build data:
 
-## 2. Technologies Used
+### Optimization Techniques Applied
 
-### Frontend
-- **React** (18.2.0) - Main frontend framework
-- **React Router DOM** (6.10.0) - Client-side routing and navigation
-- **React Icons** (5.2.1) - Icon library for social media and UI elements
-- **CSS3** - Custom styling with responsive design and animations
+1. **Linear Programming (Simplex Method)** -- Modeled asset allocation across images, JavaScript, and CSS as an LP with a 120 KB performance budget. Solved via 3-pivot simplex to find optimal allocation: 55 KB images, 55 KB JS, 10 KB CSS.
 
-### Form Handling
-- **EmailJS** (3.2.0) - Contact form functionality without backend server
+2. **Duality & Sensitivity Analysis** -- Derived the dual LP and computed shadow prices for each constraint. Key finding: each additional KB of total budget yields 1.0 quality units (shadow price), valid across the [90 KB, 145 KB] range.
 
-### Development Tools
-- **React Scripts** (5.0.1) - Build tooling and development server
-- **ESLint** & **Prettier** - Code formatting and linting
-- **Web Vitals** - Performance monitoring
+3. **Constrained Nonlinear Optimization (KKT)** -- Maximized a user engagement model `E(q,t) = 10 ln(q+0.1) - 2t^2` subject to quality and load-time constraints. KKT conditions identified the critical bandwidth threshold (3.65 Mbps) where optimal image quality flips from minimum compression to full resolution.
 
-### Deployment
-- **Netlify** - Static site hosting and deployment
+4. **Unconstrained Optimization** -- Modeled CSS render cost as `R(s,d) = 0.01s^2 + 0.5d^3 + 0.1sd`. Gradient analysis showed reducing selector depth is 13.7x more impactful than reducing CSS file size. Compared gradient descent vs Newton's method convergence.
 
-## 3. Installation
+5. **Multi-Objective Nonlinear Programming** -- Pareto-optimized across performance, visual quality, and maintainability. Found that removing dead code and code-splitting routes are "free wins" that improve all objectives simultaneously.
 
-Make sure you have **Node.js 16.x or 18.x** installed before setting up the project.
+### Concrete Results
 
-1. Clone the repository:
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Initial JS (gzipped) | 58.97 KB (1 bundle) | 56.85 KB + route chunks | -3.6% + code splitting |
+| Initial CSS (gzipped) | 3.80 KB | 2.26 KB + route chunks | -40.5% |
+| Render-blocking CDN CSS | 2 files (~8 KB) | 0 | Eliminated |
+| Dead CSS files | 6 files (599 lines) | 0 | Eliminated |
+| Unused npm dependencies | 3 packages | 0 | 9 packages removed |
+| Route code splitting | None | 3 lazy-loaded routes | Per-page chunking |
+
+### Changes Made
+
+- **Route-level code splitting** with `React.lazy()` and `Suspense` -- each page loads as a separate chunk
+- **Removed dead dependencies**: `react-slick`, `slick-carousel`, `emailjs-com`
+- **Removed dead source files**: unused CSS (Contact, ContactForm, TestimonialsSlider, Skills, Button) and TestimonialsSlider.jsx
+- **Removed unused CDN stylesheets** (slick-carousel) from `index.html`
+- **Fixed mismatched image extensions** to match actual file formats (WebP files mislabeled as .png, PNG mislabeled as .jpg)
+- **Moved dev tooling** (`eslint`, `prettier`, `eslint-plugin-prettier`) from `dependencies` to `devDependencies`
+- **Added `loading="lazy"`** to project card images for below-fold content
+
+## Quick Start
+
+Requires **Node.js >=16 <19**.
 
 ```bash
 git clone https://github.com/yahm0/AMN-REACT.JS-Portfolio.git
-```
-
-2. Navigate to the project directory:
-
-```bash
 cd AMN-REACT.JS-Portfolio
+npm install
+npm start
 ```
 
-3. Install dependencies:
+Dev server runs at http://localhost:3000.
 
-```bash
- npm install
-```
+## Scripts
 
-4. Start the development server:
+| Command | Description |
+|---------|-------------|
+| `npm start` | Development server on port 3000 |
+| `npm run build` | Production build to `build/` |
+| `npm run lint` | Run ESLint on `src/` |
+| `npm run format` | Run Prettier on `src/` |
 
-```bash
- npm start
-```
-
-**Note:** Opening `public/index.html` directly will display a blank page. Use `npm start` for local development.
-
-## 4. Usage
-
-Once the development server is running, you can view the portfolio in your browser at http://localhost:3000.
-
-Navigate through the sections using the navigation bar:
-
-- **About Me**: View Adam's professional photo, comprehensive career bio, and technical disciplines
-- **Portfolio**: Explore featured projects including:
-  - Atlas Ingest (Financial document processing pipeline)
-  - Lyra Insight (RAG + Custom AI models)
-  - Quant Analytics Notebook (Financial risk modeling)
-  - Terminal Software Website
-  - Book Search Engine
-  - Infrastructure as Code examples
-  - Machine Learning with SageMaker
-- **Contact**: Send messages via functional contact form with EmailJS integration
-- **Resume**: Download the latest resume PDF and view in embedded viewer
-
-## 5. Project Structure
+## Project Structure
 
 ```
 src/
-├── components/          # Reusable React components
-│   ├── ContactForm.jsx  # Contact form with EmailJS integration
-│   ├── Footer.jsx       # Footer with social media links
-│   ├── Header.jsx       # Header with navigation and social icons
-│   ├── Navigation.jsx   # Main navigation component
-│   ├── Project.jsx      # Individual project card component
-│   └── TestimonialsSlider.jsx
-├── pages/              # Main page components
-│   ├── AboutMe.jsx     # About section with bio and disciplines
-│   ├── Contact.jsx     # Contact page wrapper
-│   ├── Portfolio.jsx   # Portfolio showcase
-│   └── Resume.jsx      # Resume display and download
-├── styles/             # CSS stylesheets
-│   ├── App.css         # Global application styles
-│   ├── Contact.css     # Contact page styling
-│   ├── Portfolio.css   # Portfolio grid and card styling
-│   ├── Project.css     # Individual project styling
-│   └── [other].css     # Component-specific styles
-├── App.jsx             # Main application component
-└── index.jsx           # Application entry point
+  App.jsx                # Router root with lazy-loaded routes
+  index.jsx              # Entry point (React 18 createRoot)
+  pages/
+    AboutMe.jsx          # /  -- Landing page with bio and disciplines
+    Portfolio.jsx        # /portfolio -- Project cards by category
+    Resume.jsx           # /resume -- PDF iframe viewer + download
+  components/
+    Header.jsx           # Nav bar with site title and social links
+    Navigation.jsx       # NavLink items with active state
+    Footer.jsx           # Social icons + copyright
+    Project.jsx          # Reusable project card (React.memo)
+  styles/                # One CSS file per component/page
 
 public/
-├── assets/
-│   ├── imgs/           # Project images and profile photos
-│   └── resume/         # Resume PDF files
-└── index.html          # HTML template
+  assets/
+    imgs/                # Profile and background images
+    resume/              # Resume PDF
+  index.html             # HTML shell with Google Fonts preconnect
 ```
 
-## 6. Deployment
+## Routes
 
-This project is deployed to Netlify. You can view it at [your-netlify-url.](https://main--adam-nuccio-portfolio.netlify.app/)
+| Path | Page | Description |
+|------|------|-------------|
+| `/` | AboutMe | Professional bio, disciplines grid |
+| `/portfolio` | Portfolio | Projects grouped by Cloud Engineering, Web Dev, Mathematics |
+| `/resume` | Resume | Embedded PDF viewer with download link |
 
-Steps to Deploy on Netlify
+## Deployment
 
-1. Create a new site on Netlify.
-2. Connect your GitHub repository.
-3. Set the build command to:
+Deployed via Netlify with auto-deploy on push to `main`.
 
-```bash
- npm run build
-```
+**`netlify.toml` configuration includes:**
+- SPA redirect (`/*` to `/index.html`) for React Router
+- Security headers (X-Frame-Options, X-XSS-Protection, CSP directives)
+- Immutable cache headers for static assets (1-year max-age)
+- `CI=false` to prevent ESLint warnings from failing production builds
 
-4. Set the publish directory to:
+Live at [adamnuccio.com](https://adamnuccio.com).
 
-```bash
- build
-```
+## License
 
-5. Deploy the site.
-
-## 7. Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch:
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-3. Make your changes and commit them:
-
-```bash
-git commit -m "Add your feature description"
-```
-
-4. Push to the branch:
-
-```bash
-git push origin feature/your-feature-name
-```
-
-5. Create a pull request.
-
-## 8. Issues
-
-If you encounter any issues or have suggestions, please create an issue in the GitHub repository.
-
-## 9. License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## 10. Acknowledgements
-
-- [Create React App](https://create-react-app.dev/) - React application foundation
-- [React Router](https://reactrouter.com/) - Client-side routing
-- [EmailJS](https://www.emailjs.com/) - Contact form functionality
-- [React Icons](https://react-icons.github.io/react-icons/) - Icon library
-- [Netlify](https://www.netlify.com/) - Static site hosting
-- [Google Fonts](https://fonts.google.com/) - Typography resources
-
----
-
-**Built with ❤️ by Adam Nuccio**
-
-For more information about Adam's work and projects, visit the live portfolio or connect on [GitHub](https://github.com/yahm0) and [LinkedIn](https://www.linkedin.com/in/adam-nuccio/).
-
-## 11. Environment Variables
-
-This project uses EmailJS to handle contact form submissions. To set up the contact form functionality:
-
-1. Create an account at [EmailJS](https://www.emailjs.com/)
-2. Set up a service and email template
-3. Create a `.env` file in the root directory with your EmailJS credentials:
-
-```bash
-REACT_APP_EMAILJS_SERVICE_ID=your_service_id
-REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-REACT_APP_EMAILJS_USER_ID=your_user_id
-```
-
-4. Replace the placeholder values with your actual EmailJS credentials
-5. The contact form will automatically use these environment variables for email delivery
-
-**Note**: Never commit your `.env` file to version control. Add `.env` to your `.gitignore` file.
+MIT

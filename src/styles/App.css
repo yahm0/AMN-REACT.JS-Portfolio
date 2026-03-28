@@ -165,3 +165,13 @@ p {
     padding: 15px;
   }
 }
+
+/* Suspense loading fallback */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  color: #ccc;
+  font-size: 1.2rem;
+}
