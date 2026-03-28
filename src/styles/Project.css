@@ -1,46 +1,34 @@
-/* Project container styling */
 .project {
   padding: 1rem 1.25rem;
   margin: 0;
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-  font-family: 'Merriweather', serif;
-  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  border: 1px solid #eee;
   display: flex;
   flex-direction: column;
   min-height: 200px;
 }
 
-/* Image styling inside the project container */
+.project:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
 .project img {
   width: 100%;
-  /* Image takes full width of its container */
   height: auto;
-  /* Height is adjusted automatically based on the image aspect ratio */
   max-height: 220px;
-  /* Slightly increased maximum height for better proportions */
   object-fit: cover;
-  /* Ensures the image covers the area without distortion */
-  border-radius: 8px 8px 0 0;
-  /* Rounded corners at the top of the image */
+  border-radius: 6px 6px 0 0;
   margin-bottom: 1.5rem;
-  /* Increased margin below the image */
-  transition: filter 0.3s ease-in-out;
-  /* Smooth transition for filter effect on hover */
 }
 
-/* Hover effect for images */
-.project img:hover {
-  filter: brightness(0.9) contrast(1.1) saturate(1.2);
-  /* Refined shader effect to enhance the image on hover */
-}
-
-/* Title (h3) styling inside the project container */
 .project h3 {
-  color: #2c2c2c;
+  color: #1a1a1a;
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
   position: relative;
@@ -48,186 +36,90 @@
   font-weight: 600;
 }
 
-.project h3:hover {
-  color: #8c8cff;
-}
-
-/* Pseudo-element for the lavender line below the title */
 .project h3::after {
   content: '';
-  /* No content, used purely for styling */
   position: absolute;
-  /* Absolute positioning within the h3 element */
   bottom: 0;
-  /* Positioned at the bottom of the h3 element */
   left: 50%;
-  /* Positioned in the center horizontally */
   transform: translateX(-50%);
-  /* Center-aligns the pseudo-element */
-  height: 3px;
-  /* Increased thickness of the lavender line */
+  height: 1.5px;
+  width: 60%;
+  background-color: #d0d0d0;
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
+.project:hover h3::after {
   width: 85%;
-  /* Initial width of the lavender line */
-  background-color: #8c8cff;
-  /* Lavender color for the line */
-  transition: width 0.3s ease-in-out;
-  /* Smooth transition for the line's width expansion */
-  border-radius: 2px;
-  /* Rounded corners for the line */
 }
 
-/* Hover effect for the lavender line under the title */
-.project h3:hover::after {
-  width: 105%;
-  /* Expands the lavender line width on hover */
-}
-
-/* Project description styling */
 .project-description {
   font-size: 0.88rem;
-  color: #555;
+  color: #666;
   margin-bottom: 1rem;
   line-height: 1.5;
   font-style: italic;
   padding: 0 0.25rem;
 }
 
-/* Paragraph (p) styling inside the project container */
 .project p {
   font-size: 1rem;
-  /* Font size for paragraph text */
-  color: #2c2c2c;
-  /* Dark gray color for paragraph text */
+  color: #333;
   margin-bottom: 1rem;
-  /* Margin below the paragraph */
 }
 
-/* Project links container styling */
 .project-links {
   margin-top: auto;
-  /* Push links to bottom of flex container */
   padding-top: 1rem;
-  /* Add some space above the links */
 }
 
-/* Link (a) styling inside the project container */
 .project a {
   display: inline-block;
-  /* Displays the link as an inline-block element */
   padding: 0.5rem 1rem;
-  /* Padding inside the link */
   margin-top: 0.5rem;
-  /* Margin above the link */
   margin-right: 0.5rem;
-  /* Margin to the right of the link */
-  color: #f8f4e3;
-  /* Off-white color for the link text */
+  color: #fff;
   text-decoration: none;
-  /* Removes underline from the link text */
-  font-weight: bold;
-  /* Bold font weight for the link text */
+  font-weight: 600;
+  font-size: 0.9rem;
   background-color: #2c2c2c;
-  /* Initial black background for the link */
   border-radius: 5px;
-  /* Rounded corners for the link */
-  transition: background-color 0.3s, transform 0.3s;
-  /* Smooth transition for background color and scale on hover */
+  transition: background-color 0.3s ease;
 }
 
-/* Styling for the last link to remove extra right margin */
 .project a:last-child {
   margin-right: 0;
-  /* No margin on the right for the last link */
 }
 
-/* Hover effect for links */
 .project a:hover {
-  background-color: #8c8cff;
-  /* Changes the background color to lavender on hover */
-  transform: scale(1.05);
-  /* Slightly enlarges the link on hover */
+  background-color: #555;
 }
 
-/* Hover effect for the entire project container */
-.project:hover {
-  transform: scale(1.02);
-  /* Slightly enlarges the project container on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  /* Darkens the shadow for a more pronounced effect */
-  background-color: #f0f0f0;
-  /* Lightens the background color slightly on hover */
-}
-
-/* Responsive styling for medium-sized screens */
 @media (max-width: 768px) {
   .project {
     min-height: 350px;
     padding: 1.25rem;
   }
-
   .project h3 {
     font-size: clamp(1.1rem, 2.5vw + 0.3rem, 1.3rem);
   }
-
   .project p {
     font-size: clamp(0.85rem, 2vw + 0.15rem, 0.9rem);
   }
-
   .project-description {
     font-size: clamp(0.85rem, 2vw + 0.1rem, 0.9rem);
   }
-
   .project a {
     padding: 0.5rem 0.8rem;
     font-size: clamp(0.85rem, 2vw + 0.1rem, 0.9rem);
-    margin-right: 0.4rem;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
-
   .project img {
     max-height: 180px;
     margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 640px) {
-  /* Landscape mobile breakpoint */
-  .project {
-    min-height: 320px;
-    padding: 1rem;
-  }
-
-  .project h3 {
-    font-size: clamp(1rem, 2.5vw + 0.25rem, 1.2rem);
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .project p {
-    font-size: clamp(0.8rem, 2vw + 0.1rem, 0.88rem);
-  }
-
-  .project-description {
-    font-size: clamp(0.8rem, 2vw + 0.1rem, 0.85rem);
-    margin-bottom: 1.5rem;
-    padding: 0 0.5rem;
-  }
-
-  .project a {
-    padding: 0.5rem 0.75rem;
-    font-size: clamp(0.8rem, 2vw + 0.1rem, 0.85rem);
-    min-height: 44px;
-  }
-
-  .project img {
-    max-height: 160px;
-  }
-
-  .project-links {
-    padding-top: 0.75rem;
   }
 }
 
@@ -235,44 +127,24 @@
   .project {
     min-height: 300px;
     padding: 0.875rem;
-    border-radius: 10px;
   }
-
   .project h3 {
     font-size: clamp(0.95rem, 2.5vw + 0.2rem, 1.1rem);
-    margin-bottom: 0.875rem;
   }
-
   .project p {
     font-size: clamp(0.78rem, 2vw + 0.1rem, 0.85rem);
-    margin-bottom: 0.75rem;
   }
-
   .project-description {
     font-size: clamp(0.78rem, 2vw + 0.1rem, 0.82rem);
-    margin-bottom: 1.25rem;
     line-height: 1.5;
   }
-
   .project a {
     padding: 0.5rem 0.7rem;
     font-size: clamp(0.78rem, 2vw + 0.1rem, 0.82rem);
-    margin-right: 0.3rem;
-    margin-top: 0.4rem;
     min-height: 44px;
   }
-
   .project img {
     max-height: 140px;
-    margin-bottom: 0.875rem;
-    border-radius: 6px 6px 0 0;
-  }
-
-  .project-links {
-    padding-top: 0.5rem;
-  }
-
-  .project:hover {
-    transform: scale(1.01);
+    border-radius: 4px 4px 0 0;
   }
 }
