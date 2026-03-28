@@ -55,11 +55,11 @@ function AboutMe() {
 
             <h3>Technical Foundation</h3>
             <p>
-              A decade in U.S. Navy aviation maintenance and enterprise
-              network engineering sharpened my ability to diagnose complex
-              systems under pressure. That operational discipline now drives
-              how I apply discrete mathematics and cryptography to build
-              secure, resilient data pipelines.
+              A decade in U.S. Navy aviation maintenance and enterprise network
+              engineering sharpened my ability to diagnose complex systems under
+              pressure. That operational discipline now drives how I apply
+              discrete mathematics and cryptography to build secure, resilient
+              data pipelines.
             </p>
           </section>
         </div>
