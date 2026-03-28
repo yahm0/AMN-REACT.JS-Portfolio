@@ -14,7 +14,6 @@ A responsive, performance-optimized portfolio site built with React 18 and deplo
 | **Linting** | ESLint 8 + Prettier 2.8 | Code quality enforcement via pre-commit hooks (Husky + lint-staged) |
 | **Performance** | Web Vitals 3.0 | Core Web Vitals monitoring |
 | **Hosting** | Netlify | CI/CD auto-deploy from `main`, CDN, security headers |
-| **Optimization** | Claude Code (Opus 4.6) | Mathematical optimization analysis (LP, KKT, Pareto) for bundle and asset allocation |
 
 ## Performance Optimization
 

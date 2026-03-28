@@ -36,6 +36,13 @@ const categories = [
     label: 'Web Development',
     projects: [
       {
+        title: 'React Portfolio',
+        deployedLink: 'https://adamnuccio.com',
+        repoLink: 'https://github.com/yahm0/AMN-REACT.JS-Portfolio',
+        description:
+          'Performance-optimized personal portfolio built with React 18, React Router, and code splitting. Deployed on Netlify.',
+      },
+      {
         title: 'Terminal Softwares Webapp',
         deployedLink: 'https://terminalsoftware.gg',
         description:
