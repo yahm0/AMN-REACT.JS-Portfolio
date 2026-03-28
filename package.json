@@ -6,6 +6,9 @@
         "node": ">=16 <19"
     },
     "dependencies": {
+        "eslint": "^8.57.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.8.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^5.2.1",
@@ -46,9 +49,6 @@
         ]
     },
     "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "eslint": "^8.57.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "prettier": "^2.8.8"
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
     }
 }
