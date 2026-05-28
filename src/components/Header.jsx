@@ -1,7 +1,8 @@
 import React from 'react';
 import Navigation from './Navigation';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { CONTACT_EMAIL, CONTACT_MAILTO } from '../constants/contact';
 import '../styles/Header.css';
 
 function Header() {
@@ -20,6 +21,9 @@ function Header() {
             aria-label='LinkedIn'
           >
             <FaLinkedin />
+          </a>
+          <a href={CONTACT_MAILTO} aria-label={`Email ${CONTACT_EMAIL}`}>
+            <FaEnvelope />
           </a>
         </div>
       </div>

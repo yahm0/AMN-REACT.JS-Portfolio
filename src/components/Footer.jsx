@@ -1,6 +1,11 @@
 import React from 'react';
 import '../styles/Footer.css';
-import { FaGithub, FaLinkedin /*, FaStackOverflow*/ } from 'react-icons/fa'; // Importing icons
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin /*, FaStackOverflow*/,
+} from 'react-icons/fa';
+import { CONTACT_EMAIL, CONTACT_MAILTO } from '../constants/contact';
 
 function Footer() {
   const lastUpdated = new Date().toLocaleDateString('en-US', {
@@ -19,6 +24,9 @@ function Footer() {
           aria-label='LinkedIn'
         >
           <FaLinkedin />
+        </a>
+        <a href={CONTACT_MAILTO} aria-label={`Email ${CONTACT_EMAIL}`}>
+          <FaEnvelope />
         </a>
       </div>
       <p>&copy; 2026 Adam Nuccio</p>

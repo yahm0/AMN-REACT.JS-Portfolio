@@ -1,4 +1,5 @@
 import React from 'react';
+import { CONTACT_EMAIL, CONTACT_MAILTO } from '../constants/contact';
 import '../styles/AboutMe.css';
 
 function AboutMe() {
@@ -18,6 +19,9 @@ function AboutMe() {
             <h1 className='about-me-name'>Adam Nuccio</h1>
             <p className='tagline'>
               Cloud Architecture | Data Engineering | Applied Mathematics
+            </p>
+            <p className='contact-email'>
+              <a href={CONTACT_MAILTO}>{CONTACT_EMAIL}</a>
             </p>
 
             <p>
