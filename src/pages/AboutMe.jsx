@@ -42,7 +42,9 @@ function AboutMe() {
               ERP-to-Power BI pipelines, and improved user satisfaction by 50%
               via HubSpot CRM and automated help desk workflows. I also
               implemented an ELK observability stack, Intune device management,
-              and Azure AD RBAC, and migrated legacy PBX to RingCentral VoIP.
+              and Azure AD RBAC, and migrated legacy PBX to RingCentral VoIP. In
+              total, I had 10 direct reports over my time at Stan Weaver &amp;
+              Company.
             </p>
 
             <h4>Cloud Engineering &amp; Consulting</h4>
