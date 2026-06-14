@@ -26,9 +26,9 @@ function AboutMe() {
 
             <p>
               I blend mathematical rigor with IT leadership to build scalable,
-              data-driven systems. I&apos;m pursuing a B.S. in Mathematics
-              (Computational &amp; Applied) at the University of South Florida,
-              concentrating in Discrete Math and Cryptography.
+              data-driven systems. My work draws on a B.S. in Mathematics
+              (Computational &amp; Applied) from the University of South
+              Florida, with a concentration in Discrete Math and Cryptography.
             </p>
 
             <h3>Executive Impact</h3>

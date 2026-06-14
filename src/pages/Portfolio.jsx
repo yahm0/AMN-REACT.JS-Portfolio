@@ -79,6 +79,18 @@ const categories = [
         description:
           "Mathematical exploration of Euler's theorem and the multiplicative group structure of integers modulo n, with applications to cryptography.",
       },
+      {
+        title: 'Modeling DNA Evolution as a Markov Chain',
+        // repoLink: '', // add when GitHub repo is created
+        description:
+          'Models how a single DNA site drifts toward a stable base composition as a discrete-time finite Markov chain under the Jukes-Cantor (1969) substitution model, with stationary distribution and eigenvalue-based convergence analysis.',
+      },
+      {
+        title: 'Selling a Decaying Asset: A Markov Stopping Rule',
+        // repoLink: '', // add when GitHub repo is created
+        description:
+          'Determines when to sell an asset whose quality drifts as a Markov chain, using optimal stopping to balance immediate payoff against per-period holding cost and a hard deadline.',
+      },
     ],
   },
 ];
